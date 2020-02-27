@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import Instagram from "../components/Instagram.js";
 
 export const IndexPageTemplate = ({
   image,
@@ -42,7 +43,6 @@ export const IndexPageTemplate = ({
           </h1>
         </div>
       </div>
-
       <section class="section medium-container">
         <div className="container centered" style={{ flexDirection: "column" }}>
           <div
@@ -57,13 +57,12 @@ export const IndexPageTemplate = ({
           </div>{" "}
         </div>
       </section>
-
       {/* about section */}
       <div className="section has-background-teal">
         <div className="container medium-container">
-          <div className="columns">
+          <div className="columns centered">
             <div
-              className="column is-half border-light centered
+              className="column is-two-fifths border-light centered
             "
               style={{ flexDirection: "column" }}
             >
@@ -76,7 +75,7 @@ export const IndexPageTemplate = ({
               </h1>
               <PageContent className="content" content={content} />
             </div>
-            <div className="column is-half centered">
+            <div className="column is-two-fifths centered">
               <img
                 src={
                   mainpitch.image.childImageSharp
@@ -88,8 +87,9 @@ export const IndexPageTemplate = ({
               />
             </div>
           </div>
-        </div>
-      </div>
+        </div>{" "}
+      </div>{" "}
+      <Instagram />
     </div>
   );
 };

@@ -83,6 +83,14 @@ module.exports = {
         username: `iamchantalbaptiste`
       }
     },
+    // {
+    //   resolve: `gatsby-source-instagram`,
+    //   options: {
+    //     username: `izz__belle`,
+    //     access_token: "17841404047621002",
+    //     instagram_id: "205837940787420"
+    //   }
+    // },
     {
       resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
       options: {
