@@ -76,7 +76,7 @@ export const IndexPageTemplate = ({
               </h1>
               <PageContent className="content" content={content} />
             </div>
-            <div className="column is-half centered">
+            <div className="colum is-half centered">
               <img
                 src={
                   mainpitch.image.childImageSharp
