@@ -1,0 +1,274 @@
+@import "~bulma/sass/utilities/initial-variables"
+
+// Config vars
+// Chantal-Baptiste-Doula logo brand color: #008080
+$teal: #008080
+$grey: #64667a
+$primary: $teal
+
+$sand: #f9f6f6
+$black: #020314
+
+
+// #content-root .section
+//   @media screen and ( max-width: 600px )
+//     padding-left: 0.75rem;
+//     padding-right: 0.75rem;
+    
+
+
+// img, ul, li 
+//   margin-bottom: 0
+  
+body 
+  background-color: #f9f6f6
+
+
+.has-background-teal 
+  background-color: $teal
+
+.is-teal 
+  color: $primary
+.is-grey
+  background-color: $grey
+.is-sand
+  color: $sand
+
+.border-light
+  border: solid 1px $sand
+
+.box-shadow
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+.hover-button
+  background-color: transparent
+  color: $sand
+  border: $sand 1px solid 
+  padding: 1rem
+  transition: all 0.15s
+  text-transform: uppercase
+
+  &:hover
+    background-color: $sand
+    color: #2b2830
+
+.feature-text
+  line-height: 2rem
+  font-size: 1.15rem
+
+.margin-bottom 
+  margin-bottom: 1.666rem
+
+.social 
+  padding: 1em !important;
+
+.justify-between
+  justify-content: space-between
+
+
+.centered 
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+
+.hover-over-darken
+  opacity: 0.25
+  background-color: $black
+  transition: all 0.15s
+
+  
+  &:hover
+    opacity: 0.5
+
+.navbar .navbar-menu
+  box-shadow: none !important
+  
+.absolute 
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+
+.navbar-menu.is-active 
+  display: flex
+  justify-content: center
+  background-color: $sand
+
+.navbar-burger-custom
+  color: #4a4a4a
+  cursor: pointer
+  display: block
+  height: 3.25rem
+  position: relative
+  width: 3.25rem
+  margin-left: 0
+  
+
+.custom-navbar
+  display: flex;
+
+.nav-container 
+  display: flex
+  width: 100%
+  justify-content: space-around
+
+.content .taglist
+  list-style: none
+  margin-bottom: 0
+  margin-left: 0
+  margin-right: 1.5rem
+  margin-top: 1.5rem
+  display: flex
+  flex-wrap: wrap
+  justify-content: left
+  align-items: center
+  li
+    padding: 0 2rem 1rem 0
+    margin-bottom: 1.5rem
+    margin-top: 0
+
+// Helper Classes
+.full-width-image-container
+  width: 100vw
+  height: 400px
+  position: relative
+  left: 50%
+  right: 50%
+  margin: 2em -50vw
+  background-size: cover
+  background-position: bottom
+  // display: flex
+  // justify-content: center
+  // align-items: center
+
+  //hero section
+
+ 
+
+  
+.full-width-image
+  width: 100vw
+  height: 400px
+  background-size: cover
+  background-position: bottom
+  display: flex
+  // justify-content: center
+  align-items: center
+  background-attachment: fixed
+  background-position: top left
+  @media screen and (max-width: 800px)
+    background-attachment: scroll!important
+
+.hero-text
+  color: white
+
+//about section 
+.square-img-container 
+  height: 200px
+  width: 200px
+.square-img
+  object-fit: cover
+
+.medium-container 
+  width: 65%
+  margin: auto
+.large-container
+  width: 75%
+  margin: auto
+@media screen and (max-width: 756px)
+  .medium-container
+    width: 100%
+  
+.btn
+  display: inline-block
+  padding: 12px 16px 10px
+  font-size: 18px
+  font-size: 1rem
+  line-height: 1.25
+  background-color: #fff
+  border-radius: .25rem
+  text-decoration: none
+  font-weight: 700
+  color: #CC3700
+  text-align: center
+  -webkit-box-shadow: inset 0 0 0 2px #CC3700
+  box-shadow: inset 0 0 0 2px #f40
+  -webkit-transition: all .15s ease
+  transition: all .15s ease
+
+.margin-top-0
+  margin-top: 0 !important
+
+  //nav
+.navbar-item .icon
+  color: $primary
+// Override for use of svg's from https://simpleicons.org/
+.icon svg
+  width: 1.5rem
+  height: 1.5rem
+  fill: currentColor
+.navbar-brand .navbar-item.logo
+  padding: 0 1rem
+footer.footer
+  padding: 3rem 0rem 0rem
+  background-color: transparent
+
+//Menu overrides
+$menu-item-color: $white-ter
+$menu-item-hover-color: $black !important
+$menu-item-hover-background-color: $black
+$menu-item-active-color: $sand
+$menu-item-active-background-color:	$sand
+$menu-list-border-left: 1px solid $teal
+$menu-label-color: $white-ter
+
+
+.menu-label
+  font-size: 1em !important
+  text-align: left
+.menu-list
+  list-style: none !important
+  text-align: left
+.social
+  padding: 2em
+.social a
+  padding: .5em .5em .3em .5em
+  border-radius: 1em
+  background-color: $white-ter
+  margin: .5em
+  width: 1em
+  height: 1em
+  vertical-align: middle
+  display: inline
+
+// blog roll
+.blog-list-item.is-featured
+  background-color: #d6400033;
+.blog-list-item header
+  display: flex;
+  margin-bottom: 1em;
+.blog-list-item .featured-thumbnail
+  flex-basis: 35%;
+  margin: 0 1.5em 0 0;
+
+ 
+
+@import "~bulma"
+
+
+// responsiveness
+  +tablet-only
+  .blog-list-item .featured-thumbnail
+    flex-basis: 50%;
+
+    +mobile
+  .blog-list-item header
+    display: block
+  .blog-list-item .featured-thumbnail
+    text-align: center;
+    max-width: 70%;
+    margin: 0 0 1em;
+  .section.medium-container
+    width: 100%;

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "quicksand";
+  src: url("../fonts/Quicksand-Light.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "open-sans";
+  src: url(../fonts/OpenSansCondensed-Light.ttf);
+}
+
+@font-face {
+  font-family: "museo slab";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+h1 {
+  font-family: "quicksand";
+}
+
+h2 {
+  font-family: "open-sans";
+}
+
+h3 {
+  font-family: "museo slab";
+}
