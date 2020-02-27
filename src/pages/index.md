@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Chantal Baptiste
-image: /img/benji-aird-cdmK19B88_w-unsplash.jpg
+image: /img/liv-bruce-odIhQypCuUk-unsplash.jpg
 heading: Birth and Post Natal Doula
 subheading: Birth and Post Natal Doula
 mainpitch:
@@ -13,7 +13,7 @@ mainpitch:
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   title: What is a Doula?
-  image: /img/max-rovensky-_zDPkRcllJo-unsplash.jpg
+  image: /img/erol-ahmed-aIYFR0vbADk-unsplash.jpg
   title2: About Me
 ---
 
