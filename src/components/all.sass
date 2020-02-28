@@ -21,7 +21,7 @@ $black: #020314
 //   margin-bottom: 0
   
 body 
-  background-color: #f9f6f6
+  background-color: $sand
 
 
 .has-background-teal 
@@ -33,6 +33,36 @@ body
   background-color: $grey
 .is-sand
   color: $sand
+
+// .tile-column
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+
+//   flex-basis: 0;
+//   flex-grow: 1;
+//   flex-shrink: 1;
+ 
+.tile-overlay 
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background-color: white
+  opacity: 0
+  transition: all 0.15s
+
+  &:hover 
+    opacity: 0.25
+
+.tile-text 
+  position: absolute
+  background-color: white
+  padding: 1rem
+  font-weight: bold
+  text-transform: uppercase
 
 .border-light
   border: solid 1px $sand
@@ -62,6 +92,7 @@ body
 .social 
   padding: 1em !important;
 
+
 .justify-between
   justify-content: space-between
 
@@ -81,8 +112,18 @@ body
   &:hover
     opacity: 0.5
 
+  .navbar 
+    display: flex
+    align-items: baseline
+
+.nav-logo
+  display: flex
+  justify-content: baseline
+  align-items: baseline
+
 .navbar .navbar-menu
   box-shadow: none !important
+  align-items: baseline
   
 .absolute 
   position: absolute
@@ -90,6 +131,7 @@ body
   bottom: 0
   left: 0
   right: 0
+
 
 .navbar-menu.is-active 
   display: flex
@@ -113,6 +155,7 @@ body
   display: flex
   width: 100%
   justify-content: space-around
+
 
 .content .taglist
   list-style: none
@@ -164,6 +207,9 @@ body
 .hero-text
   color: white
 
+.dark-border 
+  border: black 1px solid
+
 //about section 
 .square-img-container 
   height: 200px
@@ -172,7 +218,7 @@ body
   object-fit: cover
 
 .medium-container 
-  width: 65%
+  width: 87%
   margin: auto
 .large-container
   width: 75%
@@ -180,7 +226,13 @@ body
 @media screen and (max-width: 756px)
   .medium-container
     width: 100%
-  
+
+.tiles-column 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    
 .btn
   display: inline-block
   padding: 12px 16px 10px

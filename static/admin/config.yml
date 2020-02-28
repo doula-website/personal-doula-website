@@ -55,6 +55,7 @@ collections:
                   { label: Title, name: title2, widget: string },
                   # { label: Description, name: description2, widget: text },
                   { label: Image, name: image, widget: image },
+                  { label: smallImage, name: smallImage, widget: image },
                 ] }
           - { label: "Body", name: "body", widget: "markdown" }
 

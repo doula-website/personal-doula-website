@@ -43,52 +43,85 @@ export const IndexPageTemplate = ({
           </h1>
         </div>
       </div>
-      <section class="section medium-container">
-        <div className="container centered" style={{ flexDirection: "column" }}>
-          <div
-            className="column
-          centered"
-            style={{ flexDirection: "column" }}
-          >
-            <h1 className="title margin-bottom" style={{ color: "#008080" }}>
-              {mainpitch.title}
-            </h1>
-            <p className="">{mainpitch.description}</p>{" "}
-          </div>{" "}
-        </div>
-      </section>
-      {/* about section */}
-      <div className="section has-background-teal">
-        <div className="container medium-container">
-          <div className="columns centered">
-            <div
-              className="column is-two-fifths border-light centered
-            "
-              style={{ flexDirection: "column" }}
-            >
-              <h1
-                className="title margin-bottom"
-                style={{ color: "#f9f6f6" }}
-                aria-label="about me"
+      <div style={{ display: "flex" }}>
+        <div className="section is-inline-block medium-container ">
+          <div className="section">
+            <article class="container centered dark-border">
+              <div
+                className="column"
+                style={{
+                  flexDirection: "column",
+                  padding: 50
+                }}
               >
-                {mainpitch.title2}
-              </h1>
-              <PageContent className="content" content={content} />
-            </div>
-            <div className="column is-two-fifths centered">
-              <img
-                src={
-                  mainpitch.image.childImageSharp
-                    ? mainpitch.image.childImageSharp.fluid.src
-                    : mainpitch.image
-                }
-                alt="portrait photograph"
-                className="square-img"
-              />
-            </div>
+                <h1
+                  className="title margin-bottom"
+                  style={{ color: "#008080" }}
+                >
+                  {mainpitch.title}
+                </h1>
+                <p className="">{mainpitch.description}</p>{" "}
+              </div>{" "}
+              {/* </div> */}
+            </article>
+          </div>
+          {/* about section */}
+          <div className="section">
+            <div className="container">
+              <div className="columns">
+                <article
+                  className="column is-two-thirds has-background-white"
+                  style={{ flexDirection: "column", margin: 0, padding: 50 }}
+                >
+                  <h1
+                    className="title margin-bottom is-teal"
+                    aria-label="about me"
+                  >
+                    {mainpitch.title2}
+                  </h1>
+                  <PageContent className="content" content={content} />
+                </article>
+                <div
+                  className="tiles-column"
+                  style={{
+                    width: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between"
+                  }}
+                >
+                  <div className="centered">
+                    <img
+                      src={
+                        mainpitch.image.childImageSharp
+                          ? mainpitch.image.childImageSharp.fluid.src
+                          : mainpitch.image
+                      }
+                      alt="portrait photograph"
+                      className="square-img"
+                    />
+                  </div>
+                  <div className="is-relative centered">
+                    <img
+                      src={
+                        mainpitch.smallImage.childImageSharp
+                          ? mainpitch.smallImage.childImageSharp.fluid.src
+                          : mainpitch.smallImage
+                      }
+                      alt="portrait photograph"
+                      className="square-img"
+                    />
+                    <div className="tile-overlay"></div>{" "}
+                    <p className="tile-text quicksand is-size-5-mobile">
+                      What I can do for you
+                    </p>
+                  </div>{" "}
+                </div>{" "}
+              </div>
+            </div>{" "}
           </div>
         </div>{" "}
-      </div>{" "}
+      </div>
       <Instagram />
     </div>
   );
@@ -139,6 +172,7 @@ export default IndexPage;
 export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+      html
       frontmatter {
         title
         image {
@@ -155,7 +189,14 @@ export const pageQuery = graphql`
           title2
           image {
             childImageSharp {
-              fluid(maxWidth: 350, maxHeight: 350, quality: 80) {
+              fluid(maxWidth: 250, maxHeight: 250, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          smallImage {
+            childImageSharp {
+              fluid(maxWidth: 250, maxHeight: 150, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }

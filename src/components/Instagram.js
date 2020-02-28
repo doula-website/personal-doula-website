@@ -40,7 +40,7 @@ const Instagram = () => (
           style={{
             marginBottom: "1rem",
             display: "grid",
-            gridTemplateColumns: "repeat(4, 1fr)"
+            gridTemplateColumns: "1fr 1fr 1fr"
           }}
         >
           {data.allInstaNode.edges.map((item, i) => {

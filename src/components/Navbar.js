@@ -37,10 +37,14 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar "
+        className="navbar has-white-background"
         // role="navigation"
 
-        style={{ backgroundColor: "#f9f6f6", marginLeft: "0.59rem" }}
+        style={{
+          marginLeft: "0.59rem",
+          display: "flex",
+          alignItems: "baseline"
+        }}
       >
         <div className="navbar-brand">
           {/* Hamburger menu */}
@@ -67,18 +71,24 @@ const Navbar = class extends React.Component {
                 width: "100%",
                 fontFamily: "quicksand",
                 textTransform: "uppercase"
+
                 // fontWeight: "bold"
               }}
             >
               {" "}
-              <Link to="/" className="" title="Logo">
+              <Link
+                to="/"
+                className="nav-logo"
+                title="Logo"
+                style={{ alignItems: "baseline" }}
+              >
                 <img
                   src={logo}
                   alt="Chantal Baptiste Doula Logo"
                   style={{ width: "110px", padding: "1rem" }}
                 />
               </Link>
-              <Link className="navbar-item" to="/" ari-label="home link">
+              <Link className="navbar-item " to="/" ari-label="home link">
                 Home
               </Link>
               <Link className="navbar-item" to="/services">
@@ -93,7 +103,7 @@ const Navbar = class extends React.Component {
             </div>
           </div>
         </div>
-        <div className="navbar-end centered" style={{ alignItems: "center" }}>
+        <div className="navbar-end centered align-bottom">
           <div className="container is-flex">
             <a href="https://facebook.com" className="social">
               <img
