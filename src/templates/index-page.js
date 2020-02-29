@@ -44,7 +44,7 @@ export const IndexPageTemplate = ({
         </div>
       </div>
       <div style={{ display: "flex" }}>
-        <div className="section is-inline-block medium-container ">
+        <div className="section section-mobile is-inline-block medium-container ">
           <div className="section">
             <article class="container centered dark-border">
               <div
@@ -67,7 +67,7 @@ export const IndexPageTemplate = ({
           </div>
           {/* about section */}
           <div className="section">
-            <div className="container">
+            <div className="container is-flex">
               <div className="columns">
                 <article
                   className="column is-two-thirds has-background-white"
@@ -101,7 +101,7 @@ export const IndexPageTemplate = ({
                       className="square-img"
                     />
                   </div>
-                  <div className="is-relative centered">
+                  {/* <div className="is-relative centered">
                     <img
                       src={
                         mainpitch.smallImage.childImageSharp
@@ -115,7 +115,7 @@ export const IndexPageTemplate = ({
                     <p className="tile-text quicksand is-size-5-mobile">
                       What I can do for you
                     </p>
-                  </div>{" "}
+                  </div>{" "} */}
                 </div>{" "}
               </div>
             </div>{" "}

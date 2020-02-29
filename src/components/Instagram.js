@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql, StaticQuery } from "gatsby";
 import Image from "gatsby-image";
+import Heart from "../assets/heart.svg";
 
 const Instagram = () => (
   <StaticQuery
@@ -44,17 +45,25 @@ const Instagram = () => (
           }}
         >
           {data.allInstaNode.edges.map((item, i) => {
-            console.warn(item);
             return item.node.localFile ? (
-              <div key={i}>
+              <div key={i} className="is-relative insta-post-preview">
                 <a
                   href={item.node.link}
                   target="_blank"
                   rel="noopener"
                   tabIndex="0"
+                  className="is-relative"
                 >
-                  <Image fluid={item.node.localFile.childImageSharp.fluid} />
-                </a>
+                  <Image
+                    className="insta-image-container"
+                    fluid={item.node.localFile.childImageSharp.fluid}
+                  />
+                </a>{" "}
+                <div className="is-overlay instagram-preview-overlay-top">
+                  <div className="black-hover-background"></div>
+                  <span className="is-size-6 is-white">{item.node.likes}</span>
+                  <Heart style={{ width: "1em", height: "1em" }} />
+                </div>
               </div>
             ) : (
               <div></div>

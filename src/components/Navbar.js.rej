@@ -1,0 +1,18 @@
+diff a/src/components/Navbar.js b/src/components/Navbar.js	(rejected hunks)
+@@ -37,10 +37,14 @@
+   render() {
+     return (
+       <nav
+-        className="navbar "
++        className="navbar has-white-background"
+         // role="navigation"
+ 
+-        style={{ backgroundColor: "#f9f6f6", marginLeft: "0.59rem" }}
++        style={{
++          marginLeft: "0.59rem",
++          display: "flex",
++          alignItems: "baseline"
++        }}
+       >
+         <div className="navbar-brand">
+           {/* Hamburger menu */}

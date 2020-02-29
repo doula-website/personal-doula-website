@@ -112,18 +112,14 @@ body
   &:hover
     opacity: 0.5
 
-  .navbar 
-    display: flex
-    align-items: baseline
+.navbar 
+  display: flex
 
 .nav-logo
   display: flex
-  justify-content: baseline
-  align-items: baseline
 
 .navbar .navbar-menu
   box-shadow: none !important
-  align-items: baseline
   
 .absolute 
   position: absolute
@@ -171,6 +167,50 @@ body
     padding: 0 2rem 1rem 0
     margin-bottom: 1.5rem
     margin-top: 0
+
+
+  //instagram component 
+
+.insta-post-preview 
+  margin: 3rem
+
+// .instagram-preview-overlay 
+//   position: absolute
+//   top: 0
+//   bottom: 0
+//   right: 0
+//   left: 0
+//   background-color: black
+//   opacity: 0
+
+//   display: flex
+//   justify-content: center
+//   align-items: center
+
+//   transition: all 0.15s 
+
+
+
+.instagram-preview-overlay-top
+  opacity: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: all 0.15s
+  &:hover
+    opacity: 100
+
+
+
+.insta-post-preview:hover img
+  opacity: 0.5 !important
+
+.insta-image-container 
+  background-color: black
+
+
+
+
 
 // Helper Classes
 .full-width-image-container
@@ -226,6 +266,10 @@ body
 @media screen and (max-width: 756px)
   .medium-container
     width: 100%
+ 
+@media screen and (max-width: 756px)
+  .section-mobile
+    padding: 0 !important
 
 .tiles-column 
   width: 100%;
