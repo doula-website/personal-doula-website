@@ -43,7 +43,8 @@ body
 //   flex-basis: 0;
 //   flex-grow: 1;
 //   flex-shrink: 1;
- 
+.box-shadow
+  0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02)
 .tile-overlay 
   position: absolute
   top: 0
@@ -171,27 +172,26 @@ body
 
   //instagram component 
 
+.instagram-grid
+  grid-template-columns: 1fr
+  grid-template-rows: auto
+  @media screen and (min-width: 756px)
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 
+
 .insta-post-preview 
   margin: 3rem
 
-// .instagram-preview-overlay 
-//   position: absolute
-//   top: 0
-//   bottom: 0
-//   right: 0
-//   left: 0
-//   background-color: black
-//   opacity: 0
+.small-margin
+  margin-right: 0.75rem
 
-//   display: flex
-//   justify-content: center
-//   align-items: center
-
-//   transition: all 0.15s 
-
-
+.likes
+  color: $white
+  font-style: 1rem
+ 
 
 .instagram-preview-overlay-top
+  padding: 2rem
   opacity: 0
   display: flex
   justify-content: center
@@ -200,14 +200,15 @@ body
   &:hover
     opacity: 100
 
-
-
+.insta-post-preview img 
+  transition: all 0.15s
 .insta-post-preview:hover img
   opacity: 0.5 !important
 
+
 .insta-image-container 
   background-color: black
-
+ 
 
 
 

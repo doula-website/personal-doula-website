@@ -95,7 +95,10 @@ const Navbar = class extends React.Component {
         </div>
         <div className="navbar-end centered">
           <div className="container is-flex">
-            <a href="https://facebook.com" className="social">
+            <a
+              href="https://www.facebook.com/chantalbaptistedoula"
+              className="social"
+            >
               <img
                 src={facebook}
                 alt="Facebook"
@@ -103,7 +106,10 @@ const Navbar = class extends React.Component {
               />
             </a>
 
-            <a href="https://instagram.com" className="social">
+            <a
+              href="https://www.instagram.com/iamchantalbaptiste/"
+              className="social"
+            >
               <img
                 src={instagram}
                 alt="Instagram"
