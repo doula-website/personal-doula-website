@@ -1,8 +1,7 @@
 ---
-templateKey: "resources-page"
-path: /resources
+templateKey: resources-page
 title: Useful Resources
-image: "../../../static/img/daiga-ellaby-h43VqtlnV7U-unsplash.jpg"
+image: /img/juan-davila-P8PlK2nGwqA-unsplash.jpg
 ---
 
 ### Websites
