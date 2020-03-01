@@ -2,7 +2,7 @@
 templateKey: "resources-page"
 path: /resources
 title: Useful Resources
-image: "../../../static/img/erol-ahmed-aIYFR0vbADk-unsplash.jpg"
+image: "../../../static/img/daiga-ellaby-h43VqtlnV7U-unsplash.jpg"
 ---
 
 ### Websites

@@ -78,22 +78,26 @@ const Navbar = class extends React.Component {
                   style={{ width: "110px", padding: "1rem" }}
                 />
               </Link>
-              <Link className="navbar-item " to="/" ari-label="home link">
-                Home
+              <Link
+                className="navbar-item custom-underline"
+                to="/"
+                ari-label="home link"
+              >
+                About Me
               </Link>
-              <Link className="navbar-item" to="/services">
+              <Link className="navbar-item custom-underline" to="/services">
                 Services
               </Link>
-              <Link className="navbar-item" to="/resources">
-                Resources
+              <Link className="navbar-item custom-underline" to="/resources">
+                Useful Resources
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link className="navbar-item custom-underline" to="/contact">
                 Contact
               </Link>
             </div>
           </div>
         </div>
-        <div className="navbar-end centered">
+        <div className="navbar-end centered" style={{ alignItems: "center" }}>
           <div className="container is-flex">
             <a
               href="https://www.facebook.com/chantalbaptistedoula"

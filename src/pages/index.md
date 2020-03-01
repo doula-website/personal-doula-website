@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Chantal Baptiste
-image: /img/liv-bruce-odIhQypCuUk-unsplash.jpg
+image: /img/ivana-cajina-wDb8v95nkak-unsplash.jpg
 heading: Birth and Post Natal Doula
 subheading: Birth and Post Natal Doula
 mainpitch:

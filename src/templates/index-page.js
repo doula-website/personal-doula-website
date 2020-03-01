@@ -28,14 +28,14 @@ export const IndexPageTemplate = ({
           })`
         }}
       >
-        <div className="hover-over-darken absolute"></div>
+        {/* <div className="hover-over-darken absolute"></div> */}
         <div className="section" style={{ zIndex: "1" }}>
           {/* <h2 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen">
           {title}
         </h2> */}
           <h2
-            className="hero-text is-uppercase has-text-weight-bold is-size-1-tablet is-size-2-mobile"
-            // style={{ fontSize:  }}
+            className="hero-text is-uppercase has-text-weight-bold is-size-1-mobile"
+            // style={{ textDecoration: "underline" }}
           >
             {title}
           </h2>

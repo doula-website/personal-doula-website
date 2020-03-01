@@ -3,11 +3,11 @@
 // Config vars
 // Chantal-Baptiste-Doula logo brand color: #008080
 $teal: #008080
-$grey: #64667a
+$grey: #1b1b1b
 $primary: $teal
 
 $sand: #f9f6f6
-$black: #020314
+$black: #1b1b1b
 
 
 // #content-root .section
@@ -44,7 +44,33 @@ body
 //   flex-grow: 1;
 //   flex-shrink: 1;
 .box-shadow
-  0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02)
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0), 
+
+.custom-underline 
+  &:hover,
+  &:focus,
+  &:active 
+    text-decoration: none
+    &::after 
+      width: 80%;
+      transition: 0.3s ease all
+      opacity: 75
+      
+  &::after 
+    content: ""
+    position: absolute
+    top: 65%
+    height: 2px
+    width: 0%
+    left: 10%
+    background-color: $teal
+    -webkit-transition: 0.5s ease all 0.3s
+    transition: 0.5s ease all 0s
+    border-radius: 5px
+  
+
+
+
 .tile-overlay 
   position: absolute
   top: 0
@@ -234,19 +260,21 @@ body
   
 .full-width-image
   width: 100vw
-  height: 400px
+  height: 600px
   background-size: cover
-  background-position: bottom
+  background-position: center
   display: flex
   // justify-content: center
   align-items: center
   background-attachment: fixed
-  background-position: top left
+ 
   @media screen and (max-width: 800px)
     background-attachment: scroll!important
 
 .hero-text
   color: white
+  font-size: 4rem
+ 
 
 .dark-border 
   border: black 1px solid
