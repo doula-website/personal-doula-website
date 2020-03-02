@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import Instagram from "../components/Instagram.js";
-// import InstagramLogo from "../assets/instagram.svg";
+import Instagram from "../components/Instagram";
+import InstagramLogo from "../assets/instagram.svg";
 
 export const IndexPageTemplate = ({
   image,
@@ -147,7 +147,7 @@ export const IndexPageTemplate = ({
               </span>
             </a>
             <Instagram />
-            {/* <div className="block is-absolute w-full"></div> */}
+            <div className="block is-absolute w-full"></div>
           </div>
         </article>
       </div>
