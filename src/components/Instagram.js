@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { graphql, StaticQuery } from "gatsby";
 import Image from "gatsby-image";
-import Heart from "../assets/heart.svg";
-import Comments from "../assets/speech-bubble.svg";
+import Heart from "../icons/social/heart.svg";
+import Comments from "../icons/social/speech-bubble.svg";
 
 const Instagram = () => {
   return (
@@ -65,14 +65,16 @@ const Instagram = () => {
                       <span className="small-margin likes">
                         {item.node.likes}
                       </span>
-                      <Heart
+                      <img
+                        src={Heart}
                         className="small-margin"
                         style={{ width: "1em", height: "1em" }}
                       />
                       <span className="small-margin likes">
                         {item.node.comments}
                       </span>
-                      <Comments
+                      <img
+                        src={Comments}
                         className="small-margin"
                         style={{ width: "1em", height: "1em" }}
                       />

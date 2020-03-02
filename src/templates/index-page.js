@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import Instagram from "../components/Instagram";
-import instagramLogo from "../assets/instagram.svg";
+import instagramLogo from "../icons/social/instagram.svg";
 
 export const IndexPageTemplate = ({
   image,
@@ -136,6 +136,11 @@ export const IndexPageTemplate = ({
               href="https://www.instagram.com/iamchantalbaptiste/"
               style={{ marginLeft: "3rem" }}
             >
+              {" "}
+              <img
+                src={instagramLogo}
+                style={{ height: "1.25rem", width: "1.25rem" }}
+              />
               {/* <InstagramLogo className="icon" /> */}
               <span
                 // id="instagram-title"
@@ -146,8 +151,8 @@ export const IndexPageTemplate = ({
                 iamchantalbaptiste
               </span>
             </a>
-            <img src={instagramLogo} />
-            <div className="block is-absolute w-full"></div>
+
+            <Instagram />
           </div>
         </article>
       </div>
