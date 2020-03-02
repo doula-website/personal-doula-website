@@ -4,6 +4,7 @@
 // Config vars
 // Chantal-Baptiste-Doula logo brand color: #008080
 $teal: #008080
+$lightTeal: #eff2f1
 $grey: #1b1b1b
 $primary: $teal
 
@@ -23,7 +24,7 @@ $black: #1b1b1b
   
 body 
   background-color: $sand
-
+  min-height: 100vh
 
 
 .has-background-teal 
@@ -37,6 +38,8 @@ body
   color: $sand
 .has-background-sand
   background-color: $sand
+.has-background-light-teal
+  background-color: $lightTeal
 
 // .tile-column
 //   display: flex;
@@ -57,8 +60,10 @@ body
     padding: 0 !important
     text-align: initial
 
-
-
+.section-padding-medium
+  padding: 9rem 1.5rem
+// .min-h-full 
+//   min-height: 100vh
 .custom-underline 
   &:hover,
   &:focus,
@@ -111,9 +116,8 @@ body
   position: absolute;
   background-color: #fffffffd;
   padding: 1rem;
-  font-weight: bold;
   text-transform: uppercase;
-  color: #1b1b1b !important;
+  color: $grey !important;
   padding-left: 2rem;
   padding-right: 2rem;
 
@@ -180,6 +184,10 @@ body
   
   &:hover
     opacity: 0.5
+
+#navMenu .navbar-item:hover
+  color: $teal
+
 
 .navbar 
   display: flex
@@ -395,7 +403,7 @@ body
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
 footer.footer
-  padding: 3rem 0rem 0rem
+  padding: 0rem 0rem 0rem
   background-color: transparent
 
 //Menu overrides

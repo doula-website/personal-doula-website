@@ -26,8 +26,8 @@ export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
             </h2>{" "}
           </div>{" "}
           <div className="columns">
-            <div className="column is-one-third">
-              <div className="section" style={{ backgroundColor: "#dbe0e0" }}>
+            <div className="column is-one-third ">
+              <div className="section has-background-light-teal">
                 <h1 className="margin-bottom is-size-3-tablet is-size-4-mobile">
                   {serviceTiles.title}
                 </h1>
@@ -43,8 +43,8 @@ export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
                 <p className="notifiction">{serviceTiles.description}</p>
               </div>
             </div>
-            <div className="column is-one-third">
-              <div className="section" style={{ backgroundColor: "#dbe0e0" }}>
+            <div className="column is-one-third ">
+              <div className="section has-background-light-teal">
                 <h1 className="margin-bottom is-size-3-tablet is-size-4-mobile">
                   {serviceTiles.title2}
                 </h1>
@@ -60,9 +60,9 @@ export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
                 <p className="notifiction">{serviceTiles.description2}</p>
               </div>
             </div>
-            <div className="column is-one-third">
-              <div className="section" style={{ backgroundColor: "#dbe0e0" }}>
-                <h1 className="margin-bottom  is-size-3-tablet is-size-4-mobile">
+            <div className="column is-one-third ">
+              <div className="section has-background-light-teal">
+                <h1 className="margin-bottom  is-size-3-tablet is-size-4-mobile ">
                   {serviceTiles.title3}
                 </h1>
                 <img
