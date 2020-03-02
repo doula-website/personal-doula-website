@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import Instagram from "../components/Instagram";
-import InstagramLogo from "../assets/instagram.svg";
+import instagramLogo from "../assets/instagram.svg";
 
 export const IndexPageTemplate = ({
   image,
@@ -97,7 +97,7 @@ export const IndexPageTemplate = ({
                       </div>
                       <Link
                         to="/services"
-                        className="services-tile is-relative is-grey"
+                        className="services-tile is-relative "
                       >
                         <img
                           src={
@@ -106,7 +106,7 @@ export const IndexPageTemplate = ({
                               : mainpitch.smallImage
                           }
                           alt="portrait photograph"
-                          className="square-img"
+                          className="square-img is-grey"
                         />{" "}
                         <p className="tile-text quicksand is-size-5-mobile">
                           What I Do
@@ -146,7 +146,7 @@ export const IndexPageTemplate = ({
                 iamchantalbaptiste
               </span>
             </a>
-            <Instagram />
+            <img src={instagramLogo} />
             <div className="block is-absolute w-full"></div>
           </div>
         </article>

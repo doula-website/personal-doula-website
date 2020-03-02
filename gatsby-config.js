@@ -91,14 +91,7 @@ module.exports = {
     //     instagram_id: "205837940787420"
     //   }
     // },
-    {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /assets/ // See below to configure properly
-        }
-      }
-    },
+
     {
       resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
       options: {
