@@ -129,9 +129,9 @@ export const IndexPageTemplate = ({
           </div>
         </div>{" "}
       </div>
-      <div className="home-section section">
-        <article className="container medium-container teal-border">
-          <div className="colum is-relative">
+      <div className="home-section section ">
+        <article className="has-background-sand container medium-container teal-border">
+          <div className="colum is-relative" style={{ paddingTop: "2rem" }}>
             <a
               href="https://www.instagram.com/iamchantalbaptiste/"
               style={{ marginLeft: "3rem" }}
