@@ -97,7 +97,7 @@ export const IndexPageTemplate = ({
                       </div>
                       <Link
                         to="/services"
-                        className="services-tile is-relative "
+                        className="services-tile is-relative"
                       >
                         <img
                           src={
