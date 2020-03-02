@@ -75,18 +75,59 @@ export const IndexPageTemplate = ({
             <div className="container is-flex">
               <div className="columns">
                 <article
-                  className="column is-two-thirds has-background-white about-section"
+                  className="column has-background-white about-section"
                   style={{ flexDirection: "column", margin: 0, padding: 50 }}
                 >
-                  <h1
-                    className="title margin-bottom is-teal"
-                    aria-label="about me"
-                  >
-                    {mainpitch.title2}
-                  </h1>
-                  <PageContent className="content" content={content} />
+                  <div className="columns">
+                    {" "}
+                    <div className="column is-one-third">
+                      <h1
+                        className="mobile-about-title title margin-bottom is-teal"
+                        aria-label="about me"
+                      >
+                        {mainpitch.title2}
+                      </h1>
+                      <div className=" portrait-photo margin-bottom">
+                        <img
+                          src={
+                            mainpitch.image.childImageSharp
+                              ? mainpitch.image.childImageSharp.fluid.src
+                              : mainpitch.image
+                          }
+                          alt="portrait photograph"
+                          className="square-img "
+                        />{" "}
+                      </div>
+                      <Link
+                        to="/services"
+                        className="services-tile is-relative "
+                      >
+                        <img
+                          src={
+                            mainpitch.smallImage.childImageSharp
+                              ? mainpitch.smallImage.childImageSharp.fluid.src
+                              : mainpitch.smallImage
+                          }
+                          alt="portrait photograph"
+                          className="square-img"
+                        />{" "}
+                        <p className=" tile-text quicksand is-size-5-mobile">
+                          What I Do
+                        </p>{" "}
+                      </Link>
+                    </div>
+                    <div className="column is-two-thirds">
+                      <h1
+                        className="hidden-mobile title margin-bottom is-teal"
+                        aria-label="about me"
+                      >
+                        {mainpitch.title2}
+                      </h1>
+                      <PageContent className="content" content={content} />{" "}
+                    </div>
+                  </div>
                 </article>
-                <div
+                {/* <div
                   className="tiles-column"
                   style={{
                     width: "100%",
@@ -94,19 +135,8 @@ export const IndexPageTemplate = ({
                     flexDirection: "column",
                     justifyContent: "space-between"
                   }}
-                >
-                  <div className="centered portrait-photo">
-                    <img
-                      src={
-                        mainpitch.image.childImageSharp
-                          ? mainpitch.image.childImageSharp.fluid.src
-                          : mainpitch.image
-                      }
-                      alt="portrait photograph"
-                      className="square-img "
-                    />
-                  </div>
-                  {/* <div className="is-relative centered">
+                > */}
+                {/* <div className="is-relative centered">
                     <img
                       src={
                         mainpitch.smallImage.childImageSharp
@@ -121,21 +151,25 @@ export const IndexPageTemplate = ({
                       What I can do for you
                     </p>
                   </div>{" "} */}
-                </div>{" "}
+                {/* </div>{" "} */}
               </div>
             </div>{" "}
           </div>
         </div>{" "}
       </div>
       <div id="home-section" className="section">
-        <article className="container medium-container">
+        <article className="container medium-container teal-border">
           <div className="colum is-relative">
             <a
               href="https://www.instagram.com/iamchantalbaptiste/"
               style={{ marginLeft: "3rem" }}
             >
               <InstagramLogo className="icon" />
-              <span className="title" style={{ paddingLeft: "1rem" }}>
+              <span
+                // id="instagram-title"
+                className="title is-size-4-mobile"
+                style={{ paddingLeft: "1rem" }}
+              >
                 {" "}
                 iamchantalbaptiste
               </span>
@@ -218,7 +252,7 @@ export const pageQuery = graphql`
           }
           smallImage {
             childImageSharp {
-              fluid(maxWidth: 250, maxHeight: 150, quality: 80) {
+              fluid(maxWidth: 250, maxHeight: 125, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }

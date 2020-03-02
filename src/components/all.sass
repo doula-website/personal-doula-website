@@ -1,4 +1,4 @@
-@import "~bulma/sass/utilities/initial-variables"
+@import "~bulma/sass/utilities/initial-variables";
 
 // Config vars
 // Chantal-Baptiste-Doula logo brand color: #008080
@@ -74,9 +74,17 @@ body
     -webkit-transition: 0.5s ease all 0.3s
     transition: 0.5s ease all 0s
     border-radius: 5px
+    @media screen and (max-width: 765px) 
+      background-color: transparent
+
+.services-tile:hover img
+  opacity: 0.75
+
+.services-tile
+  display: none
+  @media screen and (min-width: 756px) 
+    display: block
   
-
-
 
 .tile-overlay 
   position: absolute
@@ -92,11 +100,14 @@ body
     opacity: 0.25
 
 .tile-text 
-  position: absolute
-  background-color: white
-  padding: 1rem
-  font-weight: bold
-  text-transform: uppercase
+  position: absolute;
+  background-color: #ffffffd6;
+  padding: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1b1b1b !important;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
 .border-light
   border: solid 1px $sand
@@ -105,7 +116,7 @@ body
 
 .about-section
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03), 0 6px 6px rgba(0, 0, 0, 0)
-  @media screen and (max-width: 765px) 
+  @media screen and (max-width: 768px) 
     box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0) !important
 
 .box-shadow
@@ -251,12 +262,9 @@ body
 .insta-image-container 
   background-color: black
  
-
-.block
-  background-color: $sand
- 
-  position: absolute
-  
+#instagram-title.title
+  @media screen and (max-width: 765px)
+    font-size: 1.25 !important
 
 
 // Helper Classes
@@ -278,6 +286,8 @@ body
  
 .page-top-padding
   padding-top: 7rem
+  @media screen and (max-width: 765px)
+    padding-top: 2rem
   
 .full-width-image
   width: 100vw
@@ -289,8 +299,15 @@ body
   align-items: center
   background-attachment: fixed
  
-  @media screen and (max-width: 800px)
+  @media screen and (max-width: 765px)
     background-attachment: scroll!important
+
+.teal-border
+  border: solid $teal;
+  padding: 2rem;
+  @media screen and (max-width: 765px)
+    border: 0px
+    padding: 0
 
 .hero-text
   color: white
@@ -299,7 +316,8 @@ body
 
 .dark-border 
   border: black 1px solid
-
+  @media screen and (max-width: 765px)
+    border: transparent
 //about section 
 .square-img-container 
   height: 200px
@@ -313,11 +331,11 @@ body
 .large-container
   width: 75%
   margin: auto
-@media screen and (max-width: 756px)
+@media screen and (max-width: 768px)
   .medium-container
     width: 100%
  
-@media screen and (max-width: 756px)
+@media screen and (max-width: 768px)
   .section-mobile
     padding: 0 !important
 
@@ -405,16 +423,22 @@ $menu-label-color: $white-ter
 
 
 // responsiveness
+
   +tablet-only
   .blog-list-item .featured-thumbnail
     flex-basis: 50%;
-
     +mobile
   .blog-list-item header
     display: block
+
   .blog-list-item .featured-thumbnail
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
   .section.medium-container
     width: 100%;
+
+  .hidden-mobile
+    display: none
+    @media screen and (min-width: 768px)
+      display: block
