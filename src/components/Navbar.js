@@ -37,9 +37,9 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar "
+        className="navbar w-full is-fixed-top box-shadow"
         // role="navigation"
-        style={{ backgroundColor: "#f9f6f6", marginLeft: "0.59rem" }}
+        style={{ backgroundColor: "#f9f6f6" }}
       >
         <div className="navbar-brand">
           {/* Hamburger menu */}

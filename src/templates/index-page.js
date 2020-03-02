@@ -45,8 +45,11 @@ export const IndexPageTemplate = ({
         </div>
       </div>
       <div style={{ display: "flex" }}>
-        <div className="section section-mobile is-inline-block medium-container ">
-          <div className="section">
+        <div
+          id="home-section"
+          className="section  is-inline-block medium-container "
+        >
+          <div id="home-section" className="section">
             <article class="container centered dark-border">
               <div
                 className="column"
@@ -67,11 +70,11 @@ export const IndexPageTemplate = ({
             </article>
           </div>
           {/* about section */}
-          <div className="section">
+          <div id="home-section" className="section">
             <div className="container is-flex">
               <div className="columns">
                 <article
-                  className="column is-two-thirds has-background-white box-shadow"
+                  className="column is-two-thirds has-background-white about-section"
                   style={{ flexDirection: "column", margin: 0, padding: 50 }}
                 >
                   <h1
@@ -91,7 +94,7 @@ export const IndexPageTemplate = ({
                     justifyContent: "space-between"
                   }}
                 >
-                  <div className="centered">
+                  <div className="centered portrait-photo">
                     <img
                       src={
                         mainpitch.image.childImageSharp
@@ -99,7 +102,7 @@ export const IndexPageTemplate = ({
                           : mainpitch.image
                       }
                       alt="portrait photograph"
-                      className="square-img"
+                      className="square-img "
                     />
                   </div>
                   {/* <div className="is-relative centered">
@@ -123,9 +126,9 @@ export const IndexPageTemplate = ({
           </div>
         </div>{" "}
       </div>
-      <div className="section">
+      <div id="home-section" className="section">
         <article className="container medium-container">
-          <div className="column">
+          <div className="colum is-relative">
             <a
               href="https://www.instagram.com/iamchantalbaptiste/"
               style={{ marginLeft: "3rem" }}
@@ -136,7 +139,8 @@ export const IndexPageTemplate = ({
                 iamchantalbaptiste
               </span>
             </a>
-            <Instagram />
+            {/* <Instagram /> */}
+            {/* <div className="block is-absolute w-full"></div> */}
           </div>
         </article>
       </div>
