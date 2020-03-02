@@ -1,6 +1,6 @@
 ---
 templateKey: services-page
-title: Doula Services
+title: What I Do
 serviceTiles:
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -28,4 +28,3 @@ serviceTiles:
   title3: Post Natal Doula
 image: /img/jorge-sardinha-x3gKf-EdOsk-unsplash.jpg
 ---
-

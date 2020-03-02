@@ -39,12 +39,12 @@ const Instagram = () => {
       render={data => {
         return (
           <div
-            className="instagram-grid"
+            className="instagram-grid is-relative"
             style={{
               marginBottom: "1rem"
             }}
           >
-            {data.allInstaNode.edges.map((item, i) => {
+            {data.allInstaNode.edges.slice(0, 6).map((item, i) => {
               console.warn(item.node);
               return item.node.localFile ? (
                 <a

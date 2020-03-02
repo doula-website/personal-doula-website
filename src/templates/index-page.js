@@ -140,7 +140,7 @@ export const IndexPageTemplate = ({
                 iamchantalbaptiste
               </span>
             </a>
-            {/* <Instagram /> */}
+            <Instagram />
             {/* <div className="block is-absolute w-full"></div> */}
           </div>
         </article>
