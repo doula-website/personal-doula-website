@@ -13,6 +13,7 @@ export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
   console.warn(serviceTiles);
   return (
     <div>
+      <div className="page-top-padding"></div>
       <section className="section section--gradient">
         <div className="container">
           {/* services column  */}{" "}

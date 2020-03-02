@@ -20,6 +20,7 @@ export const IndexPageTemplate = ({
 
   return (
     <div aria-hidden="true">
+      <div className="page-top-padding"></div>
       <div
         className="full-width-image margin-top-0 is-relative"
         style={{

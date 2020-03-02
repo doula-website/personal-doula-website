@@ -14,6 +14,7 @@ export const ResourcesPageTemplate = ({
 
   return (
     <div>
+      <div className="page-top-padding"></div>
       {/* <section className="section section--gradient"> */}
       {/* <div className="container"> */}
       {/* <div className="columns">
