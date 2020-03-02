@@ -88,8 +88,11 @@ export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
       <div className="is-relative">
         <img
           className="full-width-image"
-          src={image.childImageSharp ? image.childImageSharp.fluid.src : image}
-          style={{ backgroundPosition: "center" }}
+          style={{
+            backgroundImage: `url(${
+              image.childImageSharp ? image.childImageSharp.fluid.src : image
+            })`
+          }}
           alt="full width image"
         />
         <div className="hover-over-darken absolute"></div>
