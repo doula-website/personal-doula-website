@@ -13,8 +13,8 @@ mainpitch:
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   title: What is a Doula?
-  image: /img/erol-ahmed-aIYFR0vbADk-unsplash.jpg
-  smallImage: /img/rebecca-peterson-hall-aN-zGYlxiCI-unsplash.jpg
+  image: /img/william-farlow-IevaZPwq0mw-unsplash.jpg
+  smallImage: /img/erol-ahmed-aIYFR0vbADk-unsplash.jpg
   title2: About Me
 ---
 
