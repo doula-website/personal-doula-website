@@ -44,13 +44,15 @@ body
 //   flex-grow: 1;
 //   flex-shrink: 1;
 
-#home-section.section
-  @media screen and (max-width: 765px)
+.home-section.section
+  @media screen and (max-width: 768px)
     padding: 0 !important
+.home-column.column
+  
+  @media screen and (max-width: 768px)
+    padding: 0 !important
+    text-align: initial
 
-.portrait-photo 
-  @media screen and (max-width: 756px) 
-    margin: 3rem
 
 
 .custom-underline 
@@ -83,7 +85,9 @@ body
 .services-tile
   display: none
   @media screen and (min-width: 756px) 
-    display: block
+    display: flex
+    justify-content: center
+    align-items: center
   
 
 .tile-overlay 
@@ -134,6 +138,15 @@ body
     background-color: $sand
     color: #2b2830
 
+.hidden-mobile
+  display: none
+  @media screen and (min-width: 768px)
+    display: block
+.hidden-desktop
+  display: block
+  @media screen and (min-width: 768px)
+    display: none
+    
 .feature-text
   line-height: 2rem
   font-size: 1.15rem
@@ -438,7 +451,3 @@ $menu-label-color: $white-ter
   .section.medium-container
     width: 100%;
 
-  .hidden-mobile
-    display: none
-    @media screen and (min-width: 768px)
-      display: block

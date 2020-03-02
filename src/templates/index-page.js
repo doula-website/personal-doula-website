@@ -46,14 +46,11 @@ export const IndexPageTemplate = ({
         </div>
       </div>
       <div style={{ display: "flex" }}>
-        <div
-          id="home-section"
-          className="section  is-inline-block medium-container "
-        >
-          <div id="home-section" className="section">
+        <div className="home-section section  is-inline-block medium-container ">
+          <div className=" section">
             <article class="container centered dark-border">
               <div
-                className="column"
+                className="home-column column"
                 style={{
                   flexDirection: "column",
                   padding: 50
@@ -71,23 +68,23 @@ export const IndexPageTemplate = ({
             </article>
           </div>
           {/* about section */}
-          <div id="home-section" className="section">
+          <div className="home-section section">
             <div className="container is-flex">
               <div className="columns">
                 <article
-                  className="column has-background-white about-section"
+                  className=" column has-background-white about-section"
                   style={{ flexDirection: "column", margin: 0, padding: 50 }}
                 >
                   <div className="columns">
                     {" "}
-                    <div className="column is-one-third">
+                    <div className="centered column is-one-third">
                       <h1
-                        className="mobile-about-title title margin-bottom is-teal"
+                        className="hidden-desktop title margin-bottom is-teal"
                         aria-label="about me"
                       >
                         {mainpitch.title2}
                       </h1>
-                      <div className=" portrait-photo margin-bottom">
+                      <div className="portrait-photo margin-bottom">
                         <img
                           src={
                             mainpitch.image.childImageSharp
@@ -111,12 +108,12 @@ export const IndexPageTemplate = ({
                           alt="portrait photograph"
                           className="square-img"
                         />{" "}
-                        <p className=" tile-text quicksand is-size-5-mobile">
+                        <p className="tile-text quicksand is-size-5-mobile">
                           What I Do
                         </p>{" "}
                       </Link>
                     </div>
-                    <div className="column is-two-thirds">
+                    <div className="home-column column is-two-thirds">
                       <h1
                         className="hidden-mobile title margin-bottom is-teal"
                         aria-label="about me"
@@ -127,37 +124,12 @@ export const IndexPageTemplate = ({
                     </div>
                   </div>
                 </article>
-                {/* <div
-                  className="tiles-column"
-                  style={{
-                    width: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "space-between"
-                  }}
-                > */}
-                {/* <div className="is-relative centered">
-                    <img
-                      src={
-                        mainpitch.smallImage.childImageSharp
-                          ? mainpitch.smallImage.childImageSharp.fluid.src
-                          : mainpitch.smallImage
-                      }
-                      alt="portrait photograph"
-                      className="square-img"
-                    />
-                    <div className="tile-overlay"></div>{" "}
-                    <p className="tile-text quicksand is-size-5-mobile">
-                      What I can do for you
-                    </p>
-                  </div>{" "} */}
-                {/* </div>{" "} */}
               </div>
             </div>{" "}
           </div>
         </div>{" "}
       </div>
-      <div id="home-section" className="section">
+      <div className="home-section section">
         <article className="container medium-container teal-border">
           <div className="colum is-relative">
             <a
