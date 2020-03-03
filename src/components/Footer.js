@@ -18,7 +18,7 @@ const Footer = class extends React.Component {
                   <ul className="menu-list">
                     <li>
                       <Link aria-label="home" to="/" className="navbar-item">
-                        Home
+                        About Me
                       </Link>
                     </li>
                     <li>

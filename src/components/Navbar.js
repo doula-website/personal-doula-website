@@ -82,16 +82,29 @@ const Navbar = class extends React.Component {
                 className="navbar-item custom-underline"
                 to="/"
                 ari-label="home link"
+                activeStyle={{ color: "#008080" }}
               >
                 About Me
               </Link>
-              <Link className="navbar-item custom-underline" to="/services">
+              <Link
+                className="navbar-item custom-underline"
+                to="/services"
+                activeStyle={{ color: "#008080" }}
+              >
                 Services
               </Link>
-              <Link className="navbar-item custom-underline" to="/resources">
+              <Link
+                className="navbar-item custom-underline"
+                to="/resources"
+                activeStyle={{ color: "#008080" }}
+              >
                 Useful Resources
               </Link>
-              <Link className="navbar-item custom-underline" to="/contact">
+              <Link
+                className="navbar-item custom-underline"
+                to="/contact"
+                activeStyle={{ color: "#008080" }}
+              >
                 Contact
               </Link>
             </div>
