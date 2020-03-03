@@ -309,12 +309,17 @@ body
   // align-items: center
 
   //hero section
-
+#nav.fixed-desktop
+  position: fixed 
+  width: 100%
+  background-color: white
+  @media screen and (max-width: 770px)
+    position: static
  
 .page-top-padding
   padding-top: 7rem
   @media screen and (max-width: 780px)
-    padding-top: 2rem
+    padding-top: 0rem
   
 .full-width-image
   width: 100vw

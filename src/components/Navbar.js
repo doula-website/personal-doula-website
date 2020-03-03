@@ -37,7 +37,8 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar w-full is-fixed-top box-shadow"
+        id="nav"
+        className="navbar w-full box-shadow fixed-desktop"
         // role="navigation"
         style={{ backgroundColor: "#f9f6f6" }}
       >
