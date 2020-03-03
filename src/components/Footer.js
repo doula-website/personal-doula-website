@@ -13,7 +13,7 @@ const Footer = class extends React.Component {
         <div className="has-text-centered is-grey has-text-white-ter">
           <div className="container is-grey  has-text-white-ter">
             <div className="columns" style={{ padding: "2rem" }}>
-              <div className="column is-one-quarter is-flex">
+              <div className="column is-one-fifth is-flex">
                 <section className="menu" role="website navigation">
                   <ul className="menu-list">
                     <li>
@@ -45,7 +45,7 @@ const Footer = class extends React.Component {
                   </ul>
                 </section>{" "}
               </div>
-              <div className="column is-one-quarter">
+              <div className="column is-one-fifth">
                 <section>
                   <ul className="menu-list">
                     <li>
@@ -71,11 +71,11 @@ const Footer = class extends React.Component {
               </div>{" "}
               {/* <div className=" has-background-teal  has-text-centered"> */}
               <div className="column is-one-quarter centered">
-                <img
+                {/* <img
                   src={logoInvert}
                   alt="Chantal Baptiste Doula"
                   style={{ width: "14em", height: "10em" }}
-                />
+                /> */}
               </div>
               {/* </div> */}
               <div className="column is-one-quarter social">
@@ -89,7 +89,6 @@ const Footer = class extends React.Component {
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-
                 <a
                   title="instagram"
                   href="https://www.instagram.com/iamchantalbaptiste/"
@@ -106,8 +105,11 @@ const Footer = class extends React.Component {
                     alt="email"
                     style={{ width: "1em", height: "1em" }}
                   />
-                </a>
-              </div>
+                </a>{" "}
+                <div className="section">
+                  <p>© 2020 Izabelle Wilding</p>
+                </div>
+              </div>{" "}
             </div>
           </div>{" "}
         </div>
