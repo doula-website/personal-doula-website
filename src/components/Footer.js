@@ -31,16 +31,14 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
 
-                    <li></li>
                     <li>
-                      <a
+                      <Link
                         className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        to="/contact"
+                        aria-label="contact"
                       >
-                        Admin
-                      </a>
+                        Contact
+                      </Link>
                     </li>
                   </ul>
                 </section>{" "}
@@ -58,13 +56,14 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link
+                      <a
                         className="navbar-item"
-                        to="/contact"
-                        aria-label="contact"
+                        href="/admin/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        Contact
-                      </Link>
+                        Admin
+                      </a>
                     </li>
                   </ul>
                 </section>
