@@ -20,10 +20,6 @@ export const IndexPageTemplate = ({
 
   return (
     <>
-      <SEO
-        title="About Chantal"
-        description="About Chantal Baptiste Doula Bristol"
-      />
       <div aria-hidden="true">
         <div className="page-top-padding"></div>
         <div
@@ -170,6 +166,10 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <SEO
+        title="About Me"
+        description="About Chantal Baptiste Doula Bristol"
+      />
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}

@@ -127,6 +127,8 @@ const ServicesPage = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Doula Services Bristol" description="What I do" />
+
       <ServicesPageTemplate {...frontmatter} />
     </Layout>
   );
