@@ -77,9 +77,9 @@ export const IndexPageTemplate = ({
                 >
                   <div className="columns">
                     {" "}
-                    <div className="centered column is-one-third">
+                    <div className="centered column is-one-third ">
                       <h1
-                        className="hidden-desktop title margin-bottom is-teal"
+                        className="hidden-desktop title margin-bottom is-teal has-text-left"
                         aria-label="about me"
                       >
                         {mainpitch.title2}
@@ -92,7 +92,7 @@ export const IndexPageTemplate = ({
                               : mainpitch.image
                           }
                           alt="portrait photograph"
-                          className="square-img "
+                          className="square-img about-img"
                         />{" "}
                       </div>
                       <Link
@@ -106,7 +106,7 @@ export const IndexPageTemplate = ({
                               : mainpitch.smallImage
                           }
                           alt="portrait photograph"
-                          className="square-img is-grey"
+                          className="square-img is-grey about-img"
                         />{" "}
                         <p className="tile-text quicksand is-size-5-mobile">
                           What I Do
