@@ -39,14 +39,12 @@ const Navbar = class extends React.Component {
       <nav
         id="nav"
         className="navbar w-full box-shadow fixed-desktop"
-        // role="navigation"
         style={{ backgroundColor: "#f9f6f6" }}
       >
         <div className="navbar-brand">
           {/* Hamburger menu */}
           <div className="navbar-start" style={{ display: "flex" }}>
             <div
-              // overidden bulma navbar-burger for styling purposes
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
@@ -57,7 +55,7 @@ const Navbar = class extends React.Component {
               <span />
               <span />
             </div>
-            {/* </div> */}
+
             <div
               id="navMenu"
               aria-label="navigation menu"
@@ -117,6 +115,7 @@ const Navbar = class extends React.Component {
               href="https://www.facebook.com/chantalbaptistedoula"
               className="social"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src={facebook}
@@ -129,6 +128,7 @@ const Navbar = class extends React.Component {
               href="https://www.instagram.com/iamchantalbaptiste/"
               className="social"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src={instagram}

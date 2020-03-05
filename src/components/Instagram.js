@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { graphql, StaticQuery } from "gatsby";
 import Image from "gatsby-image";
 import Heart from "../icons/social/heart.svg";
@@ -50,7 +50,7 @@ const Instagram = () => {
                 <a
                   href={`https://www.instagram.com/p/${item.node.id}`}
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   tabIndex="0"
                   className="is-relative"
                 >

@@ -1,7 +1,12 @@
 module.exports = {
   siteMetadata: {
+    author: `@izabellewilding`,
     title: "Chantal Baptiste Doula",
-    description: "Birth and Post Natal Doula based in Bristol."
+    titleTemplate: "Chantal Baptiste Doula · %s",
+    description: "Birth and Post Natal Doula based in Bristol.",
+    siteUrl: "https://chantal-baptiste-doula-prod.netlify.com/",
+    url: "https://chantal-baptiste-doula-prod.netlify.com/",
+    image: "/src/icons/doula-logo.png"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -17,6 +22,7 @@ module.exports = {
         icon: `static/img/doula-logo.png`
       }
     },
+    `gatsby-plugin-sitemap`,
     "gatsby-plugin-sass",
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
@@ -26,6 +32,7 @@ module.exports = {
         name: "uploads"
       }
     },
+    // [`gatsby-plugin-sitemap`],
     {
       resolve: "gatsby-source-filesystem",
       options: {

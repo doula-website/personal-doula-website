@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-
-import logoInvert from "../icons/doula-logo-inverted.svg";
 import facebook from "../icons/social/facebook.svg";
 import instagram from "../icons/social/instagram.svg";
 import email from "../icons/email-darkRed.svg";
@@ -68,19 +66,12 @@ const Footer = class extends React.Component {
                   </ul>
                 </section>
               </div>{" "}
-              {/* <div className=" has-background-teal  has-text-centered"> */}
-              <div className="column is-one-quarter centered">
-                {/* <img
-                  src={logoInvert}
-                  alt="Chantal Baptiste Doula"
-                  style={{ width: "14em", height: "10em" }}
-                /> */}
-              </div>
-              {/* </div> */}
+              <div className="column is-one-quarter centered"></div>
               <div className="column is-one-quarter social">
                 <a
                   title="facebook"
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.facebook.com/chantalbaptistedoula"
                 >
                   <img
@@ -95,6 +86,7 @@ const Footer = class extends React.Component {
                 >
                   <img
                     target="_blank"
+                    rel="noopener noreferrer"
                     src={instagram}
                     alt="Instagram"
                     style={{ width: "1em", height: "1em" }}

@@ -2,21 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import Img from "gatsby-image";
-import leaves from "../icons/leaves.svg";
-// import fullWidthServicesImg from "../../static/img/gabriela-tamara-cycman-I-EiXkwo1fU-unsplash.jpg";
-
-// import Content, { HTMLContent } from "../components/Content";
 
 export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
-  // const PageContent = contentComponent || Content;
   console.warn(serviceTiles);
   return (
     <div>
       <div className="page-top-padding"></div>
       <section className="section section--gradient">
         <div className="container">
-          {/* services column  */}{" "}
           <div
             className="centered margin-bottom"
             style={{ flexDirection: "column" }}
@@ -78,13 +71,8 @@ export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
               </div>
             </div>
           </div>
-          {/* <h2 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen">
-          {title}
-        </h2> */}
         </div>
       </section>
-
-      {/* bottom full screen image */}
       <div className="is-relative">
         <img
           className="full-width-image"
