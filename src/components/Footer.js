@@ -80,6 +80,7 @@ const Footer = class extends React.Component {
               <div className="column is-one-quarter social">
                 <a
                   title="facebook"
+                  target="_blank"
                   href="https://www.facebook.com/chantalbaptistedoula"
                 >
                   <img
@@ -93,18 +94,19 @@ const Footer = class extends React.Component {
                   href="https://www.instagram.com/iamchantalbaptiste/"
                 >
                   <img
+                    target="_blank"
                     src={instagram}
                     alt="Instagram"
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-                <a title="email" href="mailto:chantalbaptistedoula@gmail.com">
+                <Link title="contact" to="/contact">
                   <img
                     src={email}
                     alt="email"
                     style={{ width: "1em", height: "1em" }}
                   />
-                </a>{" "}
+                </Link>{" "}
                 <div className="section">
                   <p>© 2020 Izabelle Wilding</p>
                 </div>

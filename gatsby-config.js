@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Chantal Baptiste Doula",
-    description: "Pre, Birth, and Post Natal Doula based in Bristol."
+    description: "Birth and Post Natal Doula based in Bristol."
   },
   plugins: [
     "gatsby-plugin-react-helmet",

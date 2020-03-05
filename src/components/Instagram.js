@@ -44,7 +44,7 @@ const Instagram = () => {
               marginBottom: "1rem"
             }}
           >
-            {data.allInstaNode.edges.slice(0, 6).map((item, i) => {
+            {data.allInstaNode.edges.slice(0, 4).map((item, i) => {
               console.warn(item.node);
               return item.node.localFile ? (
                 <a

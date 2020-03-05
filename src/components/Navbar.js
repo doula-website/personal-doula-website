@@ -44,7 +44,7 @@ const Navbar = class extends React.Component {
       >
         <div className="navbar-brand">
           {/* Hamburger menu */}
-          <div className="navbar-start">
+          <div className="navbar-start" style={{ display: "flex" }}>
             <div
               // overidden bulma navbar-burger for styling purposes
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -116,6 +116,7 @@ const Navbar = class extends React.Component {
             <a
               href="https://www.facebook.com/chantalbaptistedoula"
               className="social"
+              target="_blank"
             >
               <img
                 src={facebook}
@@ -127,6 +128,7 @@ const Navbar = class extends React.Component {
             <a
               href="https://www.instagram.com/iamchantalbaptiste/"
               className="social"
+              target="_blank"
             >
               <img
                 src={instagram}
@@ -134,13 +136,13 @@ const Navbar = class extends React.Component {
                 style={{ width: "1.25em", height: "1.25em" }}
               />
             </a>
-            <a href="mailto:chantalbaptistedoula@gmail.com" className="social">
+            <Link to="/contact" className="social">
               <img
                 src={email}
                 alt="email"
                 style={{ width: "1.25em", height: "1.25em" }}
               />
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

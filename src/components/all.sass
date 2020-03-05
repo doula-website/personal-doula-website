@@ -195,7 +195,11 @@ body
   // width: 100vw
 
 .nav-logo
-  display: flex
+  width: 52px;
+  padding-left: 0.5rem;
+  @media screen and (min-width: 768px)
+    width: 110px
+    padding: 1rem
 
 .navbar .navbar-menu
   box-shadow: none !important
@@ -257,7 +261,7 @@ body
   grid-template-rows: auto
   @media screen and (min-width: 750px)
     display: grid
-    grid-template-columns: 1fr 1fr 1fr 
+    grid-template-columns: 1fr 1fr 1fr 1fr
 
 .insta-post-preview 
   margin: 3rem
