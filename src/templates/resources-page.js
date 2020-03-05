@@ -15,11 +15,7 @@ export const ResourcesPageTemplate = ({
   return (
     <div>
       <div className="page-top-padding"></div>
-      {/* <section className="section section--gradient"> */}
-      {/* <div className="container"> */}
-      {/* <div className="columns">
-          <div className="column is-10 is-offset-1"> */}
-      {/* <div className="section"> */}
+
       <div
         className="full-width-image margin-top-0 is-relative centered"
         style={{
@@ -50,13 +46,7 @@ export const ResourcesPageTemplate = ({
           </div>
         </div>
       </div>
-
-      {/* </div> */}
-      {/* </div>
-        </div> */}
-      {/* </div> */}
     </div>
-    // </section>
   );
 };
 

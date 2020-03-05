@@ -13,8 +13,6 @@ export const IndexPageTemplate = ({
   mainpitch,
   content,
   contentComponent
-
-  // intro
 }) => {
   const PageContent = contentComponent || Content;
 
@@ -29,15 +27,8 @@ export const IndexPageTemplate = ({
           })`
         }}
       >
-        {/* <div className="hover-over-darken absolute"></div> */}
         <div className="section" style={{ zIndex: "1" }}>
-          {/* <h2 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen">
-          {title}
-        </h2> */}
-          <h2
-            className="hero-text is-uppercase has-text-weight-bold is-size-1-mobile"
-            // style={{ textDecoration: "underline" }}
-          >
+          <h2 className="hero-text is-uppercase has-text-weight-bold is-size-1-mobile">
             {title}
           </h2>
           <h1 className="hero-text is-size-2-tablet is-size-3-mobile">
@@ -63,11 +54,9 @@ export const IndexPageTemplate = ({
                   {mainpitch.title}
                 </h1>
                 <p className="">{mainpitch.description}</p>{" "}
-              </div>{" "}
-              {/* </div> */}
+              </div>
             </article>
           </div>
-          {/* about section */}
           <div className="home-section section">
             <div className="container is-flex">
               <div className="columns">
@@ -141,9 +130,7 @@ export const IndexPageTemplate = ({
                 src={instagramLogo}
                 style={{ height: "1.25rem", width: "1.25rem" }}
               />
-              {/* <InstagramLogo className="icon" /> */}
               <span
-                // id="instagram-title"
                 className="title is-size-4-mobile"
                 style={{ paddingLeft: "1rem" }}
               >
@@ -163,15 +150,10 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  // heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   content: PropTypes.string,
   contentComponent: PropTypes.func
-  // description: PropTypes.string,
-  // intro: PropTypes.shape({
-  //   blurbs: PropTypes.array
-  // })
 };
 
 const IndexPage = ({ data }) => {
