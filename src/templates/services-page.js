@@ -105,9 +105,9 @@ export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </h3>{" "}
-              <button href="/contact" class="is-medium hover-button">
+              <a href="/contact" type="button" class="is-medium hover-button">
                 Get in Touch
-              </button>
+              </a>
             </div>{" "}
           </div>
         </section>
