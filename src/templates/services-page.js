@@ -82,7 +82,6 @@ export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
               image.childImageSharp ? image.childImageSharp.fluid.src : image
             })`
           }}
-          alt="full width image"
         />
         <div className="hover-over-darken absolute"></div>
         <section class="section large-container absolute centered">
