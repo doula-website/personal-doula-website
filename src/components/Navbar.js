@@ -38,7 +38,7 @@ const Navbar = class extends React.Component {
     return (
       <nav
         id="nav"
-        className="navbar w-full box-shadow fixed-desktop"
+        className="navbar w-full box-shadow-light fixed-desktop"
         style={{ backgroundColor: "#f9f6f6" }}
       >
         <div className="navbar-brand">

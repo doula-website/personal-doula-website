@@ -100,7 +100,7 @@ const Footer = class extends React.Component {
                   />
                 </Link>{" "}
                 <div className="section">
-                  <p>© 2020 Izabelle Wilding</p>
+                  <p style={{ color: "#f5f5f569" }}>© 2020 Izabelle Wilding</p>
                 </div>
               </div>{" "}
             </div>
