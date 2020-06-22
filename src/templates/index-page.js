@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import Instagram from "../components/Instagram";
+import Instagram from "../components/instagramNew";
 import instagramLogo from "../icons/social/instagram.svg";
 
 export const IndexPageTemplate = ({
@@ -14,7 +14,7 @@ export const IndexPageTemplate = ({
   subheading,
   mainpitch,
   content,
-  contentComponent
+  contentComponent,
 }) => {
   const PageContent = contentComponent || Content;
 
@@ -27,7 +27,7 @@ export const IndexPageTemplate = ({
           style={{
             backgroundImage: `url(${
               !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-            })`
+            })`,
           }}
         >
           <div className="section" style={{ zIndex: "1" }}>
@@ -47,7 +47,7 @@ export const IndexPageTemplate = ({
                   className="home-column column"
                   style={{
                     flexDirection: "column",
-                    padding: 50
+                    padding: 50,
                   }}
                 >
                   <h1
@@ -157,7 +157,7 @@ IndexPageTemplate.propTypes = {
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   content: PropTypes.string,
-  contentComponent: PropTypes.func
+  contentComponent: PropTypes.func,
 };
 
 const IndexPage = ({ data }) => {
@@ -185,9 +185,9 @@ const IndexPage = ({ data }) => {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object
-    })
-  })
+      frontmatter: PropTypes.object,
+    }),
+  }),
 };
 
 export default IndexPage;
