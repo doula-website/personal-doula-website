@@ -81,14 +81,14 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `iamchantalbaptiste`,
-        // access_token: "17841404047621002",
-        // instagram_id: "205837940787420",
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-instagram`,
+    //   options: {
+    //     username: `iamchantalbaptiste`,
+    //     // access_token: "17841404047621002",
+    //     // instagram_id: "205837940787420",
+    //   },
+    // },
     // {
     //   resolve: `gatsby-source-instagram`,
     //   options: {
