@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Chantal Baptiste
-image: /img/ivana-cajina-wDb8v95nkak-unsplash.jpg
+image: /img/ivana-cajina-wDb8v95nkak-unsplash-sq.jpg
 subheading: Birth and Post Natal Doula in Bristol
 mainpitch:
   description: >
