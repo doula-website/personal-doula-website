@@ -85,8 +85,8 @@ module.exports = {
     //   resolve: `gatsby-source-instagram`,
     //   options: {
     //     username: `iamchantalbaptiste`,
-    //     // access_token: "17841404047621002",
-    //     // instagram_id: "205837940787420",
+    //     access_token: "17841404047621002",
+    //     instagram_id: "205837940787420",
     //   },
     // },
     // {
