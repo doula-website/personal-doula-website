@@ -33,7 +33,7 @@ const Instagram = () => {
 
               <div className="is-overlay instagram-preview-overlay-top">
                 <div className="black-hover-background"></div>
-                <span className="small-margin likes">{item.node.likes}</span>
+                <span className="small-margin likes">{item.likes}</span>
                 <img
                   src={Heart}
                   className="small-margin"
