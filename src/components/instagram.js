@@ -40,11 +40,6 @@ const Instagram = () => {
                   style={{ width: "1em", height: "1em" }}
                 />
                 <span className="small-margin likes">{item.caption}</span>
-                <img
-                  src={Comments}
-                  className="small-margin"
-                  style={{ width: "1em", height: "1em" }}
-                />
               </div>
             </div>{" "}
           </a>
