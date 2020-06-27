@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import Instagram from "../components/instagramNew";
+import Instagram from "../components/instagram";
 import instagramLogo from "../icons/social/instagram.svg";
 
 export const IndexPageTemplate = ({
