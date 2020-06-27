@@ -30,13 +30,16 @@ export const IndexPageTemplate = ({
             })`,
           }}
         >
-          <div className="section" style={{ zIndex: "1" }}>
-            <h2 className="hero-text is-uppercase has-text-weight-bold is-size-1-mobile">
+          <div className="medium-container" style={{ zIndex: "1" }}>
+            <h2 className="hero-text is-uppercase has-text-centered has-text-weight-bold is-size-1-mobile">
               {title}
             </h2>
-            <h1 className="hero-text is-size-2-tablet is-size-3-mobile">
+            <h1 className="hero-text is-size-2-tablet has-text-centered text-center margin-bottom is-size-3-mobile">
               {subheading}
             </h1>
+            <a href="/services" type="button" class="is-medium hover-button">
+              Doula Services
+            </a>
           </div>
         </div>
         <div style={{ display: "flex" }}>
@@ -51,12 +54,12 @@ export const IndexPageTemplate = ({
                   }}
                 >
                   <h1
-                    className="title margin-bottom"
+                    className="title margin-bottom text-center"
                     style={{ color: "#008080" }}
                   >
                     {mainpitch.title}
                   </h1>
-                  <p className="">{mainpitch.description}</p>{" "}
+                  <p className="text-center">{mainpitch.description}</p>{" "}
                 </div>
               </article>
             </div>
@@ -71,7 +74,7 @@ export const IndexPageTemplate = ({
                       {" "}
                       <div className="centered column is-one-third ">
                         <h1
-                          className="hidden-desktop title margin-bottom is-teal has-text-left"
+                          className="hidden-desktop title margin-bottom is-teal text-center"
                           aria-label="about me"
                         >
                           {mainpitch.title2}
@@ -105,14 +108,23 @@ export const IndexPageTemplate = ({
                           </p>{" "}
                         </Link>
                       </div>
-                      <div className="home-column column is-two-thirds">
+                      <div
+                        className="home-column column is-two-thirds is-flex"
+                        style={{
+                          flexDirection: "column",
+                          justifyContent: "space-evenly",
+                        }}
+                      >
                         <h1
-                          className="hidden-mobile title margin-bottom is-teal"
+                          className="hidden-mobile title margin-bottom is-teal text-center"
                           aria-label="about me"
                         >
                           {mainpitch.title2}
                         </h1>
-                        <PageContent className="content" content={content} />{" "}
+                        <PageContent
+                          className="content text-center"
+                          content={content}
+                        />{" "}
                       </div>
                     </div>
                   </article>

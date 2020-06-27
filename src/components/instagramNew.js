@@ -1,45 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Heart from "../icons/social/heart.svg";
 import Comments from "../icons/social/speech-bubble.svg";
-import axios from "axios";
-
-const instagramRegExp = new RegExp(
-  /<script type="text\/javascript">window\._sharedData = (.*);<\/script>/
-);
-
-const fetchInstagramPhotos = async (accountUrl) => {
-  const response = await axios.get(accountUrl);
-  const json = JSON.parse(response.data.match(instagramRegExp)[1]);
-  const edges = json.entry_data.ProfilePage[0].graphql.user.edge_owner_to_timeline_media.edges.splice(
-    0,
-    8
-  );
-  const photos = edges.map(({ node }) => {
-    return {
-      url: `https://www.instagram.com/p/${node.shortcode}/`,
-      thumbnailUrl: node.thumbnail_src,
-      displayUrl: node.display_url,
-      caption: node.edge_media_to_caption.edges[0].node.text,
-    };
-  });
-  return photos;
-};
 
 const Instagram = () => {
-  const [photos, setPhotos] = useState([]);
-
+  const [posts, setPosts] = useState([]);
   useEffect(() => {
-    (async () => {
-      try {
-        const photos = await fetchInstagramPhotos(
-          "https://www.instagram.com/iamchantalbaptiste/"
-        );
-        setPhotos(photos);
-      } catch (e) {
-        console.error("Fetching Instagram photos failed", e);
-      }
-    })();
-  });
+    fetch(`/.netlify/functions/instagram`)
+      .then((res) => res.json())
+      .then((data) => {
+        setPosts(data);
+      });
+  }, []);
 
   return (
     <div
@@ -48,8 +19,7 @@ const Instagram = () => {
         marginBottom: "1rem",
       }}
     >
-      {photos.slice(0, 4).map((item) => {
-        console.warn("ITEM:", item);
+      {posts.map((item) => {
         return item ? (
           <a
             href={item.url}
@@ -59,11 +29,11 @@ const Instagram = () => {
             className="is-relative"
           >
             <div className="is-relative insta-post-preview">
-              <img className="insta-image-container" src={item.thumbnailUrl} />
+              <img className="insta-image-container" src={item.thumbnail} />
 
               <div className="is-overlay instagram-preview-overlay-top">
                 <div className="black-hover-background"></div>
-                {/* <span className="small-margin likes">{item.node.likes}</span> */}
+                <span className="small-margin likes">{item.node.likes}</span>
                 <img
                   src={Heart}
                   className="small-margin"

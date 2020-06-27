@@ -15,6 +15,7 @@ $black: #1b1b1b
 body 
   background-color: $sand
   min-height: 100vh
+  overflow-x: hidden
 
 
 .has-background-teal 
@@ -41,6 +42,8 @@ body
 //   flex-grow: 1;
 //   flex-shrink: 1;
 
+  .section 
+    max-width: 2000px
 .home-section.section
   @media screen and (max-width: 750px)
     padding: 0 !important
@@ -87,7 +90,9 @@ body
     display: flex
     justify-content: center
     align-items: center
-  
+
+.text-center 
+  text-align: center
 
 .tile-overlay 
   position: absolute
@@ -131,6 +136,7 @@ body
   border: $sand 1px solid 
   padding: 1rem
   transition: all 0.15s
+  font-family: quicksand
   text-transform: uppercase
 
   &:hover
@@ -334,7 +340,7 @@ body
 
 .hero-text
   color: white
-  font-size: 4rem
+  font-size: 5rem
  
 
 .dark-border 
@@ -357,6 +363,10 @@ body
 .medium-container 
   width: 87%
   margin: auto
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
 .large-container
   width: 75%
   margin: auto
