@@ -74,7 +74,7 @@ export const IndexPageTemplate = ({
                       {" "}
                       <div className="centered column is-one-third ">
                         <h1
-                          className="hidden-desktop title margin-bottom is-teal text-center"
+                          className="hidden-desktop title margin-bottom-sm is-teal text-center"
                           aria-label="about me"
                         >
                           {mainpitch.title2}

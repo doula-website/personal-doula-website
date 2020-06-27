@@ -80,7 +80,7 @@ export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
           style={{
             backgroundImage: `url(${
               image.childImageSharp ? image.childImageSharp.fluid.src : image
-            })`
+            })`,
           }}
         />
         <div className="hover-over-darken absolute"></div>
@@ -94,7 +94,7 @@ export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
           centered"
               style={{
                 flexDirection: "column",
-                justifyContent: "space-between"
+                justifyContent: "space-between",
               }}
             >
               {" "}
@@ -119,7 +119,7 @@ export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
 ServicesPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   serviceTiles: PropTypes.object,
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 };
 
 const ServicesPage = ({ data }) => {
@@ -135,7 +135,7 @@ const ServicesPage = ({ data }) => {
 };
 
 ServicesPage.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
 };
 
 export default ServicesPage;
