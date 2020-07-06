@@ -10,7 +10,7 @@ const Navbar = class extends React.Component {
     super(props);
     this.state = {
       active: false,
-      navBarActiveClass: ""
+      navBarActiveClass: "",
     };
   }
 
@@ -18,17 +18,17 @@ const Navbar = class extends React.Component {
     // toggle the active boolean in the state
     this.setState(
       {
-        active: !this.state.active
+        active: !this.state.active,
       },
       // after state has been updated,
       () => {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: "is-active"
+              navBarActiveClass: "is-active",
             })
           : this.setState({
-              navBarActiveClass: ""
+              navBarActiveClass: "",
             });
       }
     );
@@ -64,7 +64,7 @@ const Navbar = class extends React.Component {
                 boxShadow: "none",
                 width: "100%",
                 fontFamily: "quicksand",
-                textTransform: "uppercase"
+                textTransform: "uppercase",
 
                 // fontWeight: "bold"
               }}

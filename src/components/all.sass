@@ -135,7 +135,7 @@ body
   border: $sand 1px solid 
   padding: 1rem
   transition: all 0.15s
-  font-family: quicksand
+  font-family: quicksand, Arial, Helvetica, sans-serif
   text-transform: uppercase
 
   &:hover
@@ -331,11 +331,8 @@ body
   display: flex
   align-items: center
   background-attachment: fixed
-  
-
-@supports (-webkit-touch-callout: none) 
-.full-width-image 
-  background-attachment: scroll!important
+  @media (max-width: 768px)
+    background-attachment: scroll
 
 
   
