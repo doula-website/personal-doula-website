@@ -330,7 +330,13 @@ body
   background-position: center
   display: flex
   align-items: center
-  background-attachment: fixed!important
+  background-attachment: fixed
+  
+
+@supports (-webkit-touch-callout: none) 
+.full-width-image 
+  background-attachment: scroll!important
+
 
   
 .teal-border
@@ -375,6 +381,9 @@ body
 @media screen and (max-width: 750px)
   .medium-container
     width: 100%
+  .large-container
+    width: 100%
+
  
 @media screen and (max-width: 750px)
   .section-mobile
