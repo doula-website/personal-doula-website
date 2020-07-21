@@ -38,7 +38,7 @@ const Navbar = class extends React.Component {
     return (
       <nav
         id="nav"
-        className="navbar is-v-centered  w-full box-shadow-light fixed-desktop"
+        className={`"navbar is-v-centered  w-full box-shadow-light fixed-desktop  ${this.state.navBarActiveClass}"`}
       >
         <div className="navbar-brand  is-v-centered">
           {/* Hamburger menu */}
