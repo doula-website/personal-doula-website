@@ -15,8 +15,9 @@ html, body
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
-  background-color: $sand
+
+  @media (max-width: 750px)
+    overflow-x: hidden;
 
   
 
@@ -55,7 +56,8 @@ html, body
   @media screen and (max-width: 750px)
     padding: 0 !important
     text-align: initial
-
+.padding-small 
+  padding: 1rem
 .section-padding-medium
   padding: 9rem 1.5rem
 // .min-h-full 
@@ -73,7 +75,7 @@ html, body
   &::after 
     content: ""
     position: absolute
-    top: 65%
+    top: 85%
     height: 2px
     width: 0%
     left: 10%
@@ -170,11 +172,14 @@ html, body
 .justify-between
   justify-content: space-between
 
-
 .centered 
   display: flex
-  justify-content: center
   align-items: center
+  text-align: center
+  justify-content: center
+.is-v-centered  
+  display: flex
+  align-items: center!important
   text-align: center
 
 .hover-over-darken
@@ -196,10 +201,9 @@ html, body
   // width: 100vw
 
 .nav-logo
-  width: 52px;
   padding-left: 0.5rem;
-  @media screen and (min-width: 768px)
-    width: 110px
+  width: 110px
+  display: flex
   
 
 .navbar .navbar-menu
@@ -218,7 +222,6 @@ html, body
 .navbar-menu.is-active 
   display: flex
   justify-content: center
-  background-color: $sand
 
 .navbar-burger-custom
   color: #4a4a4a
@@ -269,7 +272,10 @@ html, body
 
 .small-margin
   margin-right: 0.75rem
-
+.margin-auto 
+  margin: auto
+.max-width-400 
+  max-width: 400px
 .likes
   color: $white
   font-style: 1rem
@@ -323,8 +329,8 @@ html, body
     position: static
  
 .page-top-padding
-  padding-top: 7rem
-  @media screen and (max-width: 890px)
+  padding-top: 6rem
+  @media screen and (max-width: 800px)
     padding-top: 0rem
   
 .full-width-image

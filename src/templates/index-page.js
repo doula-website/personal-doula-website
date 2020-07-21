@@ -42,8 +42,8 @@ export const IndexPageTemplate = ({
             </a>
           </div>
         </div>
-        <div style={{ display: "flex" }}>
-          <div className="home-section section  is-inline-block medium-container ">
+        <div className="has-background-sand" style={{ display: "flex" }}>
+          <div className="home-section section is-inline-block medium-container ">
             <div className=" section">
               <article class="container centered dark-border">
                 <div
@@ -63,11 +63,11 @@ export const IndexPageTemplate = ({
                 </div>
               </article>
             </div>
-            <div className="home-section section">
+            <div className="home-section section ">
               <div className="container is-flex">
                 <div className="columns">
                   <article
-                    className=" column has-background-white about-section"
+                    className="column has-background-white about-section"
                     style={{ flexDirection: "column", margin: 0, padding: 50 }}
                   >
                     <div className="columns">
@@ -134,7 +134,7 @@ export const IndexPageTemplate = ({
           </div>{" "}
         </div>
         <div className="home-section section ">
-          <article className="has-background-sand container medium-container teal-border">
+          <article className=" container medium-container teal-border">
             <div className="colum is-relative" style={{ paddingTop: "2rem" }}>
               <a
                 href="https://www.instagram.com/iamchantalbaptiste/"

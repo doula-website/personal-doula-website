@@ -5,24 +5,23 @@ import Layout from "../components/Layout";
 import SEO from "../components/seo";
 
 export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
-  console.warn(serviceTiles);
   return (
     <div>
       <div className="page-top-padding"></div>
-      <section className="section section--gradient">
+      <section className="section section--gradient has-background-sand">
         <div className="container">
           <div
-            className="centered margin-bottom"
-            style={{ flexDirection: "column" }}
+            className="centered "
+            style={{ flexDirection: "column", marginBottom: "3.66rem" }}
           >
             <h2 className="title is-size-1-tablet is-size-2-mobile is-bold-light is-uppercase is-relative">
               {title}
             </h2>{" "}
           </div>{" "}
           <div className="columns">
-            <div className="column is-one-third ">
-              <div className="section box-shadow-dark has-background-light-teal">
-                <h1 className="margin-bottom is-size-3-tablet is-size-4-mobile">
+            <div className="column is is-one-third-desktop is-half-tablet ">
+              <div className=" box-shadow-dark has-background-light-teal  max-width-400  margin-auto ">
+                <h1 className=" is-size-3-tablet is-size-4-mobile padding-small ">
                   {serviceTiles.title}
                 </h1>
                 <img
@@ -34,12 +33,14 @@ export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
                   className="is-square margin-bottom"
                   alt="pre natal doula"
                 />
-                <p className="notifiction">{serviceTiles.description}</p>
+                <p className="notifiction padding-small ">
+                  {serviceTiles.description}
+                </p>
               </div>
             </div>
-            <div className="column is-one-third ">
-              <div className="box-shadow-dark section has-background-light-teal">
-                <h1 className="margin-bottom is-size-3-tablet is-size-4-mobile">
+            <div className="column is-one-third-desktop is-half-tablet ">
+              <div className="box-shadow-dark has-background-light-teal  max-width-400  margin-auto">
+                <h1 className="padding-small is-size-3-tablet is-size-4-mobile">
                   {serviceTiles.title2}
                 </h1>
                 <img
@@ -51,12 +52,14 @@ export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
                   className="is-square margin-bottom"
                   alt="birth doula"
                 />
-                <p className="notifiction">{serviceTiles.description2}</p>
+                <p className="notifiction padding-small ">
+                  {serviceTiles.description2}
+                </p>
               </div>
             </div>
-            <div className="column is-one-third ">
-              <div className="section box-shadow-dark  has-background-light-teal">
-                <h1 className="margin-bottom  is-size-3-tablet is-size-4-mobile ">
+            <div className="column is-one-third-desktop is-half-tablet">
+              <div className=" box-shadow-dark  has-background-light-teal max-width-400  margin-auto">
+                <h1 className=" padding-small is-size-3-tablet is-size-4-mobile ">
                   {serviceTiles.title3}
                 </h1>
                 <img
@@ -68,7 +71,9 @@ export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
                   className="is-square margin-bottom"
                   alt="post birth doula"
                 />
-                <p className="notifiction">{serviceTiles.description3}</p>
+                <p className="notifiction padding-small ">
+                  {serviceTiles.description3}
+                </p>
               </div>
             </div>
           </div>

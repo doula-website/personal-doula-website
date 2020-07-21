@@ -38,24 +38,30 @@ const Navbar = class extends React.Component {
     return (
       <nav
         id="nav"
-        className="navbar w-full box-shadow-light fixed-desktop"
-        style={{ backgroundColor: "#f9f6f6" }}
+        className="navbar is-v-centered  w-full box-shadow-light fixed-desktop"
       >
-        <div className="navbar-brand">
+        <div className="navbar-brand  is-v-centered">
           {/* Hamburger menu */}
-          <div className="navbar-start" style={{ display: "flex" }}>
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-              style={{ marginLeft: 0 }}
-              tabIndex="0"
-            >
-              <span />
-              <span />
-              <span />
-            </div>
+          <div
+            className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+            data-target="navMenu"
+            onClick={() => this.toggleHamburger()}
+            style={{ marginLeft: 0 }}
+            tabIndex="0"
+          >
+            <span />
+            <span />
+            <span />
+          </div>
+          <Link to="/" className="nav-logo " title="Logo">
+            <img
+              src={logo}
+              alt="Chantal Baptiste Doula Logo"
+              style={{ width: "110px", padding: "1rem" }}
+            />
+          </Link>
 
+          <div className="navbar-start" style={{ display: "flex" }}>
             <div
               id="navMenu"
               aria-label="navigation menu"
@@ -70,13 +76,6 @@ const Navbar = class extends React.Component {
               }}
             >
               {" "}
-              <Link to="/" className="nav-logo" title="Logo">
-                <img
-                  src={logo}
-                  alt="Chantal Baptiste Doula Logo"
-                  style={{ width: "110px", padding: "1rem" }}
-                />
-              </Link>
               <Link
                 className="navbar-item custom-underline"
                 to="/"
@@ -109,41 +108,39 @@ const Navbar = class extends React.Component {
             </div>
           </div>
         </div>
-        <div className="navbar-end centered" style={{ alignItems: "center" }}>
-          <div className="container is-flex">
-            <a
-              href="https://www.facebook.com/chantalbaptistedoula"
-              className="social"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={facebook}
-                alt="Facebook"
-                style={{ width: "1.25em", height: "1.25em" }}
-              />
-            </a>
+        <div className="navbar-end is-v-centered is-flex">
+          <a
+            href="https://www.facebook.com/chantalbaptistedoula"
+            className="social"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={facebook}
+              alt="Facebook"
+              style={{ width: "1.25em", height: "1.25em" }}
+            />
+          </a>
 
-            <a
-              href="https://www.instagram.com/iamchantalbaptiste/"
-              className="social"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={instagram}
-                alt="Instagram"
-                style={{ width: "1.25em", height: "1.25em" }}
-              />
-            </a>
-            <Link to="/contact" className="social">
-              <img
-                src={email}
-                alt="email"
-                style={{ width: "1.25em", height: "1.25em" }}
-              />
-            </Link>
-          </div>
+          <a
+            href="https://www.instagram.com/iamchantalbaptiste/"
+            className="social"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={instagram}
+              alt="Instagram"
+              style={{ width: "1.25em", height: "1.25em" }}
+            />
+          </a>
+          <Link to="/contact" className="social">
+            <img
+              src={email}
+              alt="email"
+              style={{ width: "1.25em", height: "1.25em" }}
+            />
+          </Link>
         </div>
       </nav>
     );
