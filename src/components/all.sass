@@ -10,12 +10,15 @@ $sand: #f9f6f6
 $black: #1b1b1b
 
     
+html, body
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background-color: $sand
 
   
-body 
-  background-color: $sand
-  min-height: 100vh
-  margin: 0 !important
 
 
 .has-background-teal 
@@ -304,7 +307,7 @@ body
   position: relative
   left: 50%
   right: 50%
-  margin: 2em -50vw
+  // margin: 2em -50vw
   background-size: cover
   background-position: bottom
   // display: flex
