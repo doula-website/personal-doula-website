@@ -195,12 +195,11 @@ html, body
 
 #navMenu .navbar-item:hover
   color: $teal
-
-
+#nav 
+  z-index: 100
 .navbar 
   display: flex
   height: 100px
-  z-index: 100
   // position: fixed
   // width: 100vw
 
@@ -274,8 +273,11 @@ html, body
     grid-template-columns: 1fr 1fr 1fr 1fr
 
 .insta-post-preview 
-  margin: 3rem
-
+  margin: 1rem
+.insta-link
+  margin-left: 0rem
+  @media(min-width: 768px) 
+    margin-left: 3rem
 .small-margin
   margin-right: 0.75rem
 .margin-auto 

@@ -138,17 +138,14 @@ export const IndexPageTemplate = ({
             <div className="colum is-relative" style={{ paddingTop: "2rem" }}>
               <a
                 href="https://www.instagram.com/iamchantalbaptiste/"
-                style={{ marginLeft: "3rem" }}
+                className="insta-link"
               >
                 {" "}
                 <img
                   src={instagramLogo}
                   style={{ height: "1.25rem", width: "1.25rem" }}
                 />
-                <span
-                  className="title is-size-4-mobile"
-                  style={{ paddingLeft: "1rem" }}
-                >
+                <span className="title is-size-4-mobile ">
                   {" "}
                   iamchantalbaptiste
                 </span>

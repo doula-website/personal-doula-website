@@ -32,6 +32,8 @@ module.exports = {
         name: "uploads",
       },
     },
+    `gatsby-plugin-postcss`,
+
     // [`gatsby-plugin-sitemap`],
     {
       resolve: "gatsby-source-filesystem",
