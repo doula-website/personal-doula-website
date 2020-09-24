@@ -151,7 +151,7 @@ export const IndexPageTemplate = ({
                 </span>
               </a>
 
-              {/* <Instagram /> */}
+              <Instagram />
             </div>
           </article>
         </div>
