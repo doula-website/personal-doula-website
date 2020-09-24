@@ -89,7 +89,7 @@ export const ServicesPageTemplate = ({ title, serviceTiles, image }) => {
           }}
         />
         <div className="hover-over-darken absolute"></div>
-        <section class="section large-container absolute centered">
+        <section className="section large-container absolute centered">
           <div
             className="container centered"
             style={{ flexDirection: "column" }}

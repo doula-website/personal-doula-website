@@ -45,7 +45,7 @@ export const IndexPageTemplate = ({
         <div className="has-background-sand" style={{ display: "flex" }}>
           <div className="home-section section is-inline-block medium-container ">
             <div className=" section">
-              <article class="container centered dark-border">
+              <article className="container centered dark-border">
                 <div
                   className="home-column column"
                   style={{
@@ -151,7 +151,7 @@ export const IndexPageTemplate = ({
                 </span>
               </a>
 
-              <Instagram />
+              {/* <Instagram /> */}
             </div>
           </article>
         </div>
