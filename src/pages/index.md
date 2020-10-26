@@ -21,15 +21,15 @@ mainpitch:
     baby while you have some well needed ‘me’ time
 
 
-    Because the name for a group of Doula’s is a cuddle and who doesn’t like a
+    Because the name for a group of doula’s is a cuddle and who doesn’t like a
     cuddle?
 
 
     Or simply because you want to hang out with me
 
 
-    I long for a day when Doula’s don’t need to exist but the science shows that
-    Doula support greatly favours birth outcomes. Having a Doula can mean less
+    I long for a day when doula’s don’t need to exist but the science shows that
+    doula support greatly favours birth outcomes. Having a doula can mean less
     pain relief, lower instances of intervention and even shorter births*.
 
 
