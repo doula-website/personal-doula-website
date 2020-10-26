@@ -39,7 +39,7 @@ mainpitch:
 
     *Brigstocke S. MIDIRS Midwifery Digest, vol 24, no 2, 2014, pp 157-160
   title: WHY HIRE A DOULA?
-  image: /img/Screen Shot 2020-10-26 at 20.53.59.png
+  image: /img/Screen Shot 2019-05-19 at 11.52.27.png
   smallImage: /img/DSCF1377.JPG
   title2: ABOUT ME
 ---
