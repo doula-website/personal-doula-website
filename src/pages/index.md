@@ -40,7 +40,7 @@ mainpitch:
     \*Brigstocke S. MIDIRS Midwifery Digest, vol 24, no 2, 2014, pp 157-160
   title: WHY HIRE A DOULA?
   image: /img/Screen Shot 2020-10-26 at 20.53.59.png
-  smallImage: /img/Screen Shot 2020-10-26 at 20.52.10.png
+  smallImage: /img/IMG_3740.jpg
   title2: ABOUT ME
 ---
 My name is Chantal (She/they).
