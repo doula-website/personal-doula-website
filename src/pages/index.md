@@ -40,10 +40,10 @@ mainpitch:
     *Brigstocke S. MIDIRS Midwifery Digest, vol 24, no 2, 2014, pp 157-160
   title: WHY HIRE A DOULA?
   image: /img/Screen Shot 2020-10-26 at 20.53.59.png
-  smallImage: /img/IMG_3740.jpg
+  smallImage: /img/DSCF1377.JPG
   title2: ABOUT ME
 ---
-My name is Chantal (She/they).
+My name is Chantal (she/they).
 
 I’ve grown up in Bristol and are proud to offer my services here. My doula work is informed by my love of herbal medicine, activism, food, and feminism. I've always doula'd in one way or another and it felt natural for me to pursue this as a career.
 
