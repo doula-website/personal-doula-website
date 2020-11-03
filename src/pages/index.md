@@ -8,7 +8,15 @@ mainpitch:
     Because you want continuity of care
 
 
+
+
+
+
     An extra pair of hands
+
+
+
+
 
 
     You want an advocate
@@ -37,7 +45,7 @@ mainpitch:
     support you.
 
 
-    *Brigstocke S. MIDIRS Midwifery Digest, vol 24, no 2, 2014, pp 157-160
+    \*Brigstocke S. MIDIRS Midwifery Digest, vol 24, no 2, 2014, pp 157-160
   title: WHY HIRE A DOULA?
   image: /img/william-farlow-IevaZPwq0mw-unsplash.jpg
   smallImage: /img/yoann-boyer-i14h2xyPr18-unsplash.jpg
