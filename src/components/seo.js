@@ -14,21 +14,24 @@ const SEO = ({ title, description, image, pathname, article }) => (
 
           defaultDescription,
           siteUrl,
-          defaultImage
-        }
-      }
+          defaultImage,
+        },
+      },
     }) => {
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
-        url: `${siteUrl}${pathname || "/"}`
+        url: `${siteUrl}${pathname || "/"}`,
       };
       return (
         <>
           <Helmet title={seo.title} titleTemplate={titleTemplate}>
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
+            <meta name="robots" content="noindex" />
+            <meta name="googlebot" content="noindex" />
+
             {seo.url && <meta property="og:url" content={seo.url} />}
             {(article ? true : null) && (
               <meta property="og:type" content="article" />
@@ -50,14 +53,14 @@ SEO.propTypes = {
   description: PropTypes.string,
   image: PropTypes.string,
   pathname: PropTypes.string,
-  article: PropTypes.bool
+  article: PropTypes.bool,
 };
 SEO.defaultProps = {
   title: null,
   description: null,
   image: null,
   pathname: null,
-  article: false
+  article: false,
 };
 const query = graphql`
   query SEO {
