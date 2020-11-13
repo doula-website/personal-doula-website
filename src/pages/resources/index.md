@@ -1,20 +1,15 @@
 ---
 templateKey: resources-page
-title: Useful Resources
-image: /img/juan-davila-P8PlK2nGwqA-unsplash.jpg
+title: USEFUL RESOURCES
+image: /img/DSCF1377.JPG
 ---
-
-### Websites
-
-https://stillbirthday.com/
-
-https://doula.org.uk/
+### Websites:
 
 https://www.birthrights.org.uk/
 
-https://www.positivebirthmovement.org/
+https://stillbirthday.com/
 
-### Reading List:
+### Reading:
 
 [Your No Guilt Pregnancy Plan: A revolutionary guide to pregnancy, birth and the weeks that follow by Rebecca Schiller](https://www.amazon.co.uk/Your-Guilt-Pregnancy-Plan-revolutionary/dp/0241315808/ref=sr_1_1?ie=UTF8&qid=1531392004&sr=8-1&keywords=your+no+guilt+pregnancy+plan)
 
