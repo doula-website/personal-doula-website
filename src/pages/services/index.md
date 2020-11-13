@@ -7,7 +7,7 @@ serviceTiles:
   description3: test
   image: /img/freestocks-ux53SGpRAHU-unsplash.jpg
   image2: /img/gabriela-tamara-cycman-I-EiXkwo1fU-unsplash.jpg
-  image3: /img/123282764_900897840741208_4323225997939379552_o.jpg
+  image3: /img/logo2.jpg
   title: Birth Preparation
   title2: Birth Doula
   title3: Postnatal support
