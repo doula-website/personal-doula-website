@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Chantal Baptiste
-image: /img/logo2.jpg
+image: /img/ivana-cajina-wDb8v95nkak-unsplash.jpg
 subheading: Birth and Postnatal doula services in Bristol.
 mainpitch:
   description: >-
@@ -48,7 +48,7 @@ mainpitch:
     \*Brigstocke S. MIDIRS Midwifery Digest, vol 24, no 2, 2014, pp 157-160
   title: WHY HIRE A DOULA?
   image: /img/photo.jpg
-  smallImage: /img/logooooo.jpeg
+  smallImage: /img/logo2.jpg
   title2: ABOUT ME
 ---
 My name is Chantal (she/they).
