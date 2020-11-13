@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Chantal Baptiste
 image: /img/ivana-cajina-wDb8v95nkak-unsplash-sq.jpg
-subheading: BIRTH AND POSTNATAL DOULA IN BRISTOL.
+subheading: Birth and Postnatal doula services in Bristol.
 mainpitch:
   description: >-
     Because you want continuity of care
