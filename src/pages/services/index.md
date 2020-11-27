@@ -3,7 +3,10 @@ templateKey: services-page
 title: SERVICES I OFFER
 serviceTiles:
   description: Not currently available.
-  description2: Not currently available.
+  description2: |-
+    Not currently available.
+
+    Part of my fee goes towards supporting people on lower incomes. 
   description3: Not currently available.
   image: /img/freestocks-ux53SGpRAHU-unsplash.jpg
   image2: /img/LOGO.png
